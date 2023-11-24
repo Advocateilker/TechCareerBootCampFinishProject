@@ -1,0 +1,215 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "name": "Elsa ve Anna Çocuk Tiyatrosu",
+            "images": ["https://www.bogaz.com.tr/images/news/buyuk/img_2187_21112019144639.jpg","https://firsat.me/img/big1024/22.03.14_11.29.17_1080x720_1.webp","https://i1.imgiz.com/rshots/9269/frozen-karlar-ulkesi-karlar-ulkesi-turkce-cerenle-cocuk-oyunlari_9269557-8677_1800x945.jpg"],
+            "category": "Tiyatro",
+            "startDate": "12.10.2023",
+            "endDate": "01.02.2024",
+            "location": {"lat":  41.00537300001897, "lng": 29.038086895504666}, 
+            "place": "Tech Kültür Merkezi",
+            "price": 55
+        },
+        {
+            "id": 2,
+            "name": "Harika Bale Gösterisi",
+            "images": ["https://karmahaskickedmyass.files.wordpress.com/2011/04/adsc4b1z41.jpg?w=900","https://upload.wikimedia.org/wikipedia/commons/d/d7/Grace_in_winter%2C_contemporary_ballet.jpg","https://image.dha.com.tr/i/dha/75/0x410/6263ac5deb10bb2884a52827.jpg"],
+            "category": "Bale",
+            "startDate": "15.11.2023",
+            "endDate": "28.11.2023",
+            "location": {"lat": 41.009940226504035, "lng":  28.97783534403187}, 
+            "place": "İstanbul Bale Salonu",
+            "price": 75
+        },
+        {
+            "id": 3,
+            "name": "Rock Konseri",
+            "images": ["https://cdn.bubilet.com.tr/files/Blog/resim-adi-42253.png","https://www.kulturistanbul.net/wp-content/uploads/2022/06/2022-istanbul-konserleri-3-960x641.jpg","https://blog.biletino.com/file/2022/05/rock-n-coke-biletino-23425.jpg"],
+            "category": "Konser",
+            "startDate": "25.02.2024",
+            "endDate": "10.03.2024",
+            "location": {"lat": 41.04482752969589, "lng": 28.9917933261097 },
+            "place": "Music Arena",
+            "price": 80
+        },
+        {
+            "id": 4,
+            "name": "Çocuk Kitapları Okuma Şenliği",
+            "images": ["https://www.sahinbey.bel.tr/upload/tr/resim/haberyonetimi/kitap-fuari_14022022114734.jpg","https://cdn.iha.com.tr/Contents/images/2022/08/4537628.jpg"],
+            "category": "Kitap Festivali",
+            "startDate": "20.03.2025",
+            "endDate": "02.04.2025",
+            "location": {"lat": 41.05283519956793, "lng": 29.066195586334732 },
+            "place": "Kitap Dükkanı",
+            "price": 25
+        },
+        {
+            "id": 5,
+            "name": "Komedi Tiyatrosu",
+            "images": null,
+            "category": "Tiyatro",
+            "startDate": "10.06.2023",
+            "endDate": "23.06.2023",
+            "location": {"lat": 41.00529925807268, "lng": 29.038026053167204},
+            "place": "Tech Kültür Merkezi",
+            "price": 60
+        },
+        {
+            "id": 6,
+            "name": "Klasik Bale Gösterisi",
+            "images": null,
+            "category": "Bale",
+            "startDate": "05.08.2023",
+            "endDate": "18.08.2023",
+            "location": {"lat":41.00971759279432,  "lng": 28.97780949273666}, 
+            "place": "İstanbul Bale Salonu",
+            "price": 70
+        },
+        {
+            "id": 7,
+            "name": "Caz Konseri",
+            "images": ["https://caz.iksv.org/i/content/25337_2_30_istanbul_caz_festivali_kapanis_mobil.jpg","https://cdn1.ntv.com.tr/gorsel/uIr7p-SF2kyRXXUPrbCzyw.jpg?width=952&height=540&mode=both&scale=both"],
+            "category": "Konser",
+            "startDate": "20.09.2023",
+            "endDate": "03.10.2023",
+            "location": {"lat": 41.04531142956474,  "lng": 28.99176382342624},
+            "place": "Music Arena",
+            "price": 55
+        },
+        {
+            "id": 8,
+            "name": "Çocuklar için Kitap Festivali",
+            "images": null,
+            "category": "Kitap Festivali",
+            "startDate": "15.10.2023",
+            "endDate": "28.10.2023",
+            "location": {"lat": 441.05279474856693,  "lng": 29.066830378656967},
+            "place": "Kitap Dükkanı",
+            "price": 30
+        },
+        {
+            "id": 9,
+            "name": "Drama Tiyatrosu",
+            "images": ["https://www.turanakinci.com/wp-content/uploads/2014/12/ti.tepe-2-700x460.jpg","https://firsat.me/img/big/17225_5c18c3a7b2da3_545x340.jpg"],
+            "category": "Tiyatro",
+            "startDate": "10.11.2023",
+            "endDate": "23.11.2023",
+            "location": {"lat": 41.00515177452049, "lng":29.038370827134205},  
+            "place": "Tech Kültür Merkezi",
+            "price": 45
+        },
+        {
+            "id": 10,
+            "name": "Modern Dans Gösterisi",
+            "images": ["https://www.yildizdansakademi.com/wp-content/uploads/2019/03/yetiskin-modern-dans-1.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXrH9EP_gLH72YAkRxTv50bDlD9VoqCLFM1A&usqp=CAU","https://i.ytimg.com/vi/Rth-hslb0wg/maxresdefault.jpg"],
+            "category": "Bale",
+            "startDate": "05.12.2023",
+            "endDate": "18.12.2023",
+            "location": {"lat": 41.01000563966526, "lng": 28.9778718427799},  
+            "place": "İstanbul Bale Salonu",
+            "price": 65
+        },
+        {
+            "id": 11,
+            "name": "Pop Konseri",
+            "images": ["https://www.wts.com.tr/images/pop-muzik-konserleri-wts.jpg","https://yenimedya.files.wordpress.com/2020/10/konser_1.jpeg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5TmjrnY5yq2bhn83yfSyBtoV_1eFVCuNJQ&usqp=CAU"],
+            "category": "Konser",
+            "startDate": "20.01.2024",
+            "endDate": "02.02.2024",
+            "location": {"lat": 41.04479554858942, "lng":  28.992189723282415},
+            "place": "Music Arena",
+            "price": 90
+        },
+        {
+            "id": 12,
+            "name": "Çocuklar İçin Masal Tiyatrosu",
+            "images": ["https://www.tedankara.k12.tr/images/bizimtiyatro/image11.jpg"],
+            "category": "Tiyatro",
+            "startDate": "15.02.2024",
+            "endDate": "28.02.2024",
+            "location": {"lat": 41.00512116448987, "lng": 29.03800024184662},  
+            "place": "Tech Kültür Merkezi",
+            "price": 35
+        },
+        {
+            "id": 13,
+            "name": "Flamenco Bale Gösterisi",
+            "images": ["https://static.daktilo.com/sites/1416/uploads/2023/08/14/157522454-1691998496-1691998777.jpg","https://www.tourmag.com.tr/wp-content/uploads/2018/08/bodrum-antik-tiyatrosu-ispanyol-flamenko-atesiyle-yanacak-2.jpg"],
+            "category": "Bale",
+            "startDate": "10.03.2024",
+            "endDate": "23.03.2024",
+            "location": {"lat": 41.0096728368617,  "lng": 28.97785663813883}, 
+            "place": "İstanbul Bale Salonu",
+            "price": 75
+        },
+        {
+            "id": 14,
+            "name": "Heavy Metal Konseri",
+            "images": ["https://blog.n11.com/wp-content/uploads/2016/08/en-populer-11-heavy-metal-grubu-2.jpg","https://www.bayrakhaber.com/wp-content/uploads/2022/07/Pentagram_7.jpg","https://img.gercekgundem.com/rcman/Cw480h270q95gc/images/posts/202203/351590_814x458.jpg","https://upload.wikimedia.org/wikipedia/commons/b/bd/Pentagram_%28M%C3%BCzik_Grubu%29.jpg"],
+            "category": "Konser",
+            "startDate": "05.04.2024",
+            "endDate": "18.04.2024",
+            "location": {"lat": 41.044724632054, "lng":  28.99240174934796},
+            "place": "Music Arena",
+            "price": 60
+        },
+        {
+            "id": 15,
+            "name": "Yazar İmza Günleri",
+            "images": ["https://www.bsha.com.tr/wp-content/uploads/2022/11/Melis-Bozkurt-3-scaled.jpeg"],
+            "category": "Kitap Festivali",
+            "startDate": "20.05.2024",
+            "endDate": "02.06.2024",
+            "location": {"lat": 41.05275934501407,  "lng": 29.065708316854927},
+            "place": "Kitap Dükkanı",
+            "price": 40
+        },
+        {
+            "id": 16,
+            "name": "Stand-up Komedi Gösterisi",
+            "images": ["https://media.istockphoto.com/id/1251603742/tr/vekt%C3%B6r/mikrofon-k%C4%B1rm%C4%B1z%C4%B1-perdeler-ve-komedi-g%C3%B6sterisi-logosu-ile-stand-up-sahne.jpg?s=170667a&w=0&k=20&c=HMsd0Vvl3PDzR8f4KD7xt7zSfWGAEqJw1qzKxjhnNmY=","https://media.istockphoto.com/id/977769296/tr/vekt%C3%B6r/stand-up-komedi.jpg?s=170667a&w=0&k=20&c=a3DLOajvIq50hMtkG6lwj-D11hBnTTFjpT0OhLdZMRk="],
+            "category": "Tiyatro",
+            "startDate": "15.06.2024",
+            "endDate": "28.06.2024",
+            "location": {"lat": 41.00508359771255, "lng": 29.03793386853193}, 
+            "place": "Tech Kültür Merkezi",
+            "price": 50
+        },
+        {
+            "id": 17,
+            "name": "Klasik Müzik Konseri",
+            "images": ["https://gezzio.com/wp-content/uploads/2018/10/viyana_musikverein_concert.jpg","https://gezzio.com/wp-content/uploads/2018/10/New-York_Philharmonic.jpg"],
+            "category": "Konser",
+            "startDate": "10.07.2024",
+            "endDate": "23.07.2024",
+            "location": {"lat": 41.04504445085783, "lng":  28.991968477570566},
+            "place": "Music Arena",
+            "price": 85
+        },
+        {
+            "id": 18,
+            "name": "Çocuk Kitapları Festivali",
+            "images":null,
+            "category": "Kitap Festivali",
+            "startDate": "05.08.2024",
+            "endDate": "18.08.2024",
+            "location": {"lat": 41.052504831376254, "lng": 29.066553217899287},
+            "place": "Kitap Dükkanı",
+            "price": 30
+        },
+        {
+            "id": 19,
+            "name": "Çocuk Tiyatro Şenliği",
+            "images": ["https://www2.denizli.bel.tr/userfiles/image/r170420090459421.jpg","https://belediyehaber.net/wp-content/uploads/2022/04/tiyatro-3.jpeg"],
+            "category": "Tiyatro",
+            "startDate": "15.10.2024",
+            "endDate": "28.10.2024",
+            "location": {"lat":41.004986203218934,"lng": 29.038313672013224},  
+            "place": "Tech Kültür Merkezi",
+            "price": 40
+        }
+    ],
+    "categories":["Tiyarto","Bale","Konser","Kitap Festivali"]
+    
+}
