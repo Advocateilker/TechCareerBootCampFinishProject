@@ -1,12 +1,14 @@
 import React from 'react'
 
-const Home = () => {
+const Home = ({auth,user}) => {
+
+
+  console.log(user,auth)
+
+ 
+
   return (
-    <div>
-      <div>
-        
-      </div>
-    </div>
+    <div>Home</div>
   )
 }
 
