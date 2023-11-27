@@ -8,11 +8,38 @@ import AuthPage from './pages/AuthPage'
 import Detail from './pages/Detail'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home'
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from './firebase/config'
+import axios from 'axios';
+
 
 const App = () => {
 
-  const [authNow, setAuthNow] = useState()
-  const [userNow, setUserNow] = useState([])
+  const [user, setUser] = useState()
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      setUser(user)
+      // ...
+    } else {
+      // User is signed out
+      // ...
+    }
+  });
+
+  const [events,setEvents]=useState([])
+
+
+
+
+  useEffect(()=>{
+    axios.get("http://localhost:3038/events")
+    .then((res)=>setEvents(res.data))
+    .catch((err)=>console.log(err))
+
+
+  },[])
+  
 
 
 
@@ -22,10 +49,9 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-
-        <Route path='/' element={<AuthPage setAuthNow={setAuthNow} setUserNow={setUserNow} />} />
-        <Route path="/home" element={<Home/>} />
-        <Route path="/feed" element={<ListView authNow={authNow} userNow={userNow} />} />
+        <Route path='/' element={<AuthPage user={user} />} />
+        <Route path="/home" element={<Home user={user} events={events} />} />
+        <Route path="/feed" element={<ListView user={user} events={events}  />} />
         <Route path="/feed/:id" element={<Detail />} />
         <Route path='/map' element={<MapList />} />
 

@@ -196,3 +196,62 @@ button {
   }
   
 }
+
+.home {
+  width: 90%;
+  margin: 12px auto;
+  .welcome{
+    border: 1px solid transparent;
+    box-shadow: 2px 2px 12px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    gap:8px;
+
+    p{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      img{
+        width: 22px;
+        height: 22px;
+        border-radius: 100%;
+        position: absolute;
+        top:-10px;
+        left:-21px;
+      }
+      span{
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+    }
+
+    
+  }
+  .popular{
+    max-height: 80px;
+
+    .popular-index{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 22px 0;
+      .splide{
+        height: 600px;
+      }
+      img{
+        width: 100%;
+        height: 500px;
+        object-position: center;
+        object-fit: contain;
+        
+      }
+
+    }
+
+
+  }
+}
+

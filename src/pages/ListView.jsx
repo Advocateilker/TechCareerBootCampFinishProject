@@ -1,37 +1,11 @@
-import axios from 'axios';
-import {useState,useEffect} from 'react'
 import {useNavigate } from "react-router-dom";
 import Card from '../components/Card';
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from '../firebase/config';
 
 
-const ListView = ({authNow,userNow}) => {
+const ListView = ({events,user}) => {
 
   const navigate=useNavigate()
-  const [events,setEvents]=useState([])
-  const [user,setUser]=useState()
 
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      setUser(user)
-      // ...
-    } else {
-      // User is signed out
-      // ...
-    }
-  });
-
-
-
-  useEffect(()=>{
-    axios.get("http://localhost:3038/events")
-    .then((res)=>setEvents(res.data))
-    .catch((err)=>console.log(err))
-
-
-  },[])
-  
   console.log(events)
  
   if(user){
