@@ -7,11 +7,12 @@ import ListView from './pages/ListView'
 import AuthPage from './pages/AuthPage'
 import Detail from './pages/Detail'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './pages/Home'
 
 const App = () => {
 
-  const [auth, setAuth] = useState()
-  const [user, setUser] = useState([])
+  const [authNow, setAuthNow] = useState()
+  const [userNow, setUserNow] = useState([])
 
 
 
@@ -22,8 +23,9 @@ const App = () => {
       <Header />
       <Routes>
 
-        <Route path='/' element={<AuthPage setAuth={setAuth} setUser={setUser} />} />
-        <Route path="/feed" element={<ListView auth={auth} user={user} />} />
+        <Route path='/' element={<AuthPage setAuthNow={setAuthNow} setUserNow={setUserNow} />} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/feed" element={<ListView authNow={authNow} userNow={userNow} />} />
         <Route path="/feed/:id" element={<Detail />} />
         <Route path='/map' element={<MapList />} />
 

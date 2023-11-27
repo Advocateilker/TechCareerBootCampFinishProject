@@ -36,9 +36,9 @@ const Detail = ({ events }) => {
             rewind: true,
           }}
         >
-          {event?.images?.map((i) => (
+          {event?.images?.map((i,index) => (
             <SplideSlide>
-              <img src={i} alt="Image 1" />
+              <img key={index} src={i} alt="Image 1" />
             </SplideSlide>
 
           ))}

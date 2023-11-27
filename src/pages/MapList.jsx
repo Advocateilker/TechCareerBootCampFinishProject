@@ -1,14 +1,30 @@
 import React from 'react'
-import { 
-    MapContainer, 
-    TileLayer, 
-    Marker, 
+import axios from 'axios';
+import { useState, useEffect } from 'react'
+import { useNavigate } from "react-router-dom";
+import {
+    MapContainer,
+    TileLayer,
+    Marker,
     Popup,
     Polyline
-  } from 'react-leaflet'
-  import "leaflet/dist/leaflet.css"
+} from 'react-leaflet'
+import "leaflet/dist/leaflet.css"
 
 const MapList = () => {
+
+
+    const navigate = useNavigate()
+    const [events, setEvents] = useState([])
+
+
+
+    useEffect(() => {
+        axios.get("http://localhost:3038/events")
+            .then((res) => setEvents(res.data))
+            .catch((err) => console.log(err))
+    }, [])
+
     return (
         <div className='mapView'>
             <MapContainer style={{ height: "100%", width: "100%" }} center={[41.05, 29.09]} zoom={11} scrollWheelZoom={true}>
@@ -16,11 +32,21 @@ const MapList = () => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[51.505, -0.09]}>
-                    <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
-                    </Popup>
-                </Marker>
+
+                {events?.map((e) => (
+
+                    <Marker position={[e.location.lat, e.location.lng]}>
+                        <Popup>
+                            <h4>{e?.name}</h4>
+                            <p>{e?.category}</p>
+                            <p>Tarih: <span> {e?.startDate} - {e?.endDate}</span></p>
+                            <p>Price: <span> 65 &#8378;</span></p>
+                            <button onClick={()=> navigate(`/feed/${e.id}`)}>Detaylar</button>
+                        </Popup>
+                    </Marker>
+
+                ))}
+
             </MapContainer>
 
         </div>
