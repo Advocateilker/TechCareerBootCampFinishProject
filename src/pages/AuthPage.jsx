@@ -2,6 +2,7 @@ import { signInWithPopup } from 'firebase/auth'
 import React from 'react'
 import { auth, provider } from '../firebase/config'
 import {useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 const AuthPage = ({setAuth,setUser}) => {
 
@@ -13,6 +14,7 @@ const AuthPage = ({setAuth,setUser}) => {
                 setAuth(true)
                 setUser(auth.currentUser)
                 navigate("/feed")
+                toast.success("Başarılı Şekilde Giriş Yapıldı.")
             })
             .catch((err) => console.log(err))
 

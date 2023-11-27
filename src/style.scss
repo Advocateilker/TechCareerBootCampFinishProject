@@ -9,6 +9,10 @@
   list-style: none;
 }
 
+body{
+  background-color: rgb(221, 248, 158);
+}
+
 //Header Kısmı
 
 header {
@@ -37,7 +41,7 @@ header {
       text-shadow: 2px 2px 12px black;
 
       &:hover {
-        color:chocolate;
+        color: chocolate;
       }
     }
 
@@ -71,34 +75,34 @@ header {
   border-radius: 12px;
 
   h1 {
-      font-size: 3.2rem;
-      line-height: 1.2;
+    font-size: 3.2rem;
+    line-height: 1.2;
   }
 
   p {
-      font-size: 1.2rem;
-      text-shadow: 2px 2px 10px rgb(235, 142, 235);
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 10px rgb(235, 142, 235);
   }
 
 
   button {
-      display: flex;
-      align-items: center;
-      border-radius: 20px;
-      padding: 5px 10px;
-      gap: 8px;
-      background-color: rgb(3, 46, 3);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 10px;
+    gap: 8px;
+    background-color: rgb(3, 46, 3);
 
-      img {
-          width: 25px;
-          height: 25px;
-          border-radius: 100%;
-      }
+    img {
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+    }
 
   }
 
   @media (max-width:700px) {
-      width: 90vw;
+    width: 90vw;
   }
 
 }
@@ -115,26 +119,79 @@ button {
   transition: border-color .2s;
 
   &:hover {
-      border-color: rgb(235, 142, 235);
+    border-color: rgb(235, 142, 235);
   }
 
   &:focus {
-      outline: 4px auto rgb(235, 142, 235);
+    outline: 4px auto rgb(235, 142, 235);
   }
 }
 
-h1 {
-  font-size: 3.2rem;
-  line-height: 1.2;
-}
 
-p {
-  font-size: 1.2rem;
-  text-shadow: 2px 2px 10px rgb(235, 142, 235);
-}
 
 
 .mapView {
   height: 90vh;
   width: 100%;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 80vh;
+  gap:15px;
+  padding: 12px 22px;
+  .card{
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 8px 14px;
+    cursor: pointer;
+    &:hover{
+      background-color: chocolate;
+      color: white;
+    }
+    & h3{
+      text-align: center;
+      margin: 2px auto;
+    }
+
+    & div p{
+      font-weight: 700;
+      & span{
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.detail-card{
+  width: 80%;
+  margin: 22px auto;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  transition: border .3s;
+  box-shadow: 2px 2px 12px black;
+  display: flex;
+  justify-content: space-between;
+
+
+  &:hover{
+    border: 1px solid chocolate;
+    border-radius: 12px;
+  }
+
+  .detail-card-left{
+    width: 60%;
+  }
+
+  .splide{
+    width: 100%;
+
+    & img{
+      width: 100%;
+    }
+
+  }
+  
 }

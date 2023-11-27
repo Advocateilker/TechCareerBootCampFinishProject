@@ -47,7 +47,7 @@
         {
             "id": 5,
             "name": "Komedi Tiyatrosu",
-            "images": null,
+            "images": false,
             "category": "Tiyatro",
             "startDate": "10.06.2023",
             "endDate": "23.06.2023",
@@ -58,7 +58,7 @@
         {
             "id": 6,
             "name": "Klasik Bale Gösterisi",
-            "images": null,
+            "images": false,
             "category": "Bale",
             "startDate": "05.08.2023",
             "endDate": "18.08.2023",
@@ -80,7 +80,7 @@
         {
             "id": 8,
             "name": "Çocuklar için Kitap Festivali",
-            "images": null,
+            "images": false,
             "category": "Kitap Festivali",
             "startDate": "15.10.2023",
             "endDate": "28.10.2023",
@@ -190,7 +190,7 @@
         {
             "id": 18,
             "name": "Çocuk Kitapları Festivali",
-            "images":null,
+            "images":false,
             "category": "Kitap Festivali",
             "startDate": "05.08.2024",
             "endDate": "18.08.2024",

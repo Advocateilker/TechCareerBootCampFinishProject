@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <div onClick={()=>navigate("/")} className='left'>LOGO</div>
       <div className='right'>
-        <NavLink to={"/list"}>List</NavLink>
+        <NavLink to={"/feed"}>List</NavLink>
         <NavLink to={"/map"}>Map</NavLink>
       </div>
 
