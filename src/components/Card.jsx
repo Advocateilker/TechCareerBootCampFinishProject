@@ -17,7 +17,6 @@ const Card = ({ i }) => {
                 <p>Tarih: <span> {i.startDate} - {i.endDate}</span></p>
                 <p>Yeri: <span>{i.place}</span> </p>
                 <p>Price: <span> 65 &#8378;</span></p>
-
             </div>
         </div>
     )

@@ -173,7 +173,8 @@ button {
   transition: border .3s;
   box-shadow: 2px 2px 12px black;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 12px;
 
 
   &:hover{
@@ -182,7 +183,7 @@ button {
   }
 
   .detail-card-left{
-    width: 60%;
+    width: 100%;
   }
 
   .splide{

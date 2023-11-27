@@ -9,7 +9,8 @@
             "endDate": "01.02.2024",
             "location": {"lat":  41.00537300001897, "lng": 29.038086895504666}, 
             "place": "Tech Kültür Merkezi",
-            "price": 55
+            "price": 55,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d696.9306864466258!2d29.037798193342567!3d41.005409515534055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzE5LjMiTiAyOcKwMDInMTcuMSJF!5e0!3m2!1str!2str!4v1701067577204!5m2!1str!2str"
         },
         {
             "id": 2,
@@ -20,7 +21,8 @@
             "endDate": "28.11.2023",
             "location": {"lat": 41.009940226504035, "lng":  28.97783534403187}, 
             "place": "İstanbul Bale Salonu",
-            "price": 75
+            "price": 75,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3010.699762936591!2d28.97526037654631!3d41.009944219321596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzM1LjgiTiAyOMKwNTgnNDAuMiJF!5e0!3m2!1str!2str!4v1701067736053!5m2!1str!2str"
         },
         {
             "id": 3,
@@ -31,7 +33,8 @@
             "endDate": "10.03.2024",
             "location": {"lat": 41.04482752969589, "lng": 28.9917933261097 },
             "place": "Music Arena",
-            "price": 80
+            "price": 80,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3009.105061343439!2d28.989218376547647!3d41.04483151717238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAyJzQxLjQiTiAyOMKwNTknMzAuNSJF!5e0!3m2!1str!2str!4v1701067787182!5m2!1str!2str"
         },
         {
             "id": 4,
@@ -42,7 +45,8 @@
             "endDate": "02.04.2025",
             "location": {"lat": 41.05283519956793, "lng": 29.066195586334732 },
             "place": "Kitap Dükkanı",
-            "price": 25
+            "price": 25,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3008.7388712151187!2d29.06362067654794!3d41.052839216679075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAzJzEwLjIiTiAyOcKwMDMnNTguMyJF!5e0!3m2!1str!2str!4v1701067849510!5m2!1str!2str" 
         },
         {
             "id": 5,
@@ -53,7 +57,8 @@
             "endDate": "23.06.2023",
             "location": {"lat": 41.00529925807268, "lng": 29.038026053167204},
             "place": "Tech Kültür Merkezi",
-            "price": 60
+            "price": 60,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3010.9118147817903!2d29.035451176546314!3d41.00530331960738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzE5LjEiTiAyOcKwMDInMTYuOSJF!5e0!3m2!1str!2str!4v1701067888819!5m2!1str!2str"
         },
         {
             "id": 6,
@@ -64,7 +69,8 @@
             "endDate": "18.08.2023",
             "location": {"lat":41.00971759279432,  "lng": 28.97780949273666}, 
             "place": "İstanbul Bale Salonu",
-            "price": 70
+            "price": 70,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3010.7099344192425!2d28.975234576546374!3d41.009721619335224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzM1LjAiTiAyOMKwNTgnNDAuMSJF!5e0!3m2!1str!2str!4v1701067949861!5m2!1str!2str"
         },
         {
             "id": 7,
@@ -75,7 +81,8 @@
             "endDate": "03.10.2023",
             "location": {"lat": 41.04531142956474,  "lng": 28.99176382342624},
             "place": "Music Arena",
-            "price": 55
+            "price": 55,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3009.082934385392!2d28.98918887654766!3d41.04531541714261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAyJzQzLjEiTiAyOMKwNTknMzAuNCJF!5e0!3m2!1str!2str!4v1701067981995!5m2!1str!2str" 
         },
         {
             "id": 8,
@@ -84,9 +91,10 @@
             "category": "Kitap Festivali",
             "startDate": "15.10.2023",
             "endDate": "28.10.2023",
-            "location": {"lat": 441.05279474856693,  "lng": 29.066830378656967},
+            "location": {"lat": 41.05279474856693,  "lng": 29.066830378656967},
             "place": "Kitap Dükkanı",
-            "price": 30
+            "price": 30,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3008.740723417914!2d29.06425547654785!3d41.05279871668154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAzJzEwLjEiTiAyOcKwMDQnMDAuNiJF!5e0!3m2!1str!2str!4v1701068021227!5m2!1str!2str"
         },
         {
             "id": 9,
@@ -97,7 +105,8 @@
             "endDate": "23.11.2023",
             "location": {"lat": 41.00515177452049, "lng":29.038370827134205},  
             "place": "Tech Kültür Merkezi",
-            "price": 45
+            "price": 45,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3010.918554022896!2d29.035795876546217!3d41.00515581961639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzE4LjYiTiAyOcKwMDInMTguMSJF!5e0!3m2!1str!2str!4v1701068081111!5m2!1str!2str" 
         },
         {
             "id": 10,
@@ -108,7 +117,8 @@
             "endDate": "18.12.2023",
             "location": {"lat": 41.01000563966526, "lng": 28.9778718427799},  
             "place": "İstanbul Bale Salonu",
-            "price": 65
+            "price": 65,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3010.696774540873!2d28.975296876546434!3d41.01000961931749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzM2LjAiTiAyOMKwNTgnNDAuMyJF!5e0!3m2!1str!2str!4v1701068110809!5m2!1str!2str"
         },
         {
             "id": 11,
@@ -119,7 +129,8 @@
             "endDate": "02.02.2024",
             "location": {"lat": 41.04479554858942, "lng":  28.992189723282415},
             "place": "Music Arena",
-            "price": 90
+            "price": 90,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3009.1065245775662!2d28.989614776547626!3d41.04479951717445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAyJzQxLjMiTiAyOMKwNTknMzEuOSJF!5e0!3m2!1str!2str!4v1701068145479!5m2!1str!2str" 
         },
         {
             "id": 12,
@@ -130,7 +141,8 @@
             "endDate": "28.02.2024",
             "location": {"lat": 41.00512116448987, "lng": 29.03800024184662},  
             "place": "Tech Kültür Merkezi",
-            "price": 35
+            "price": 35,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3010.919952127365!2d29.03542527654622!3d41.00512521961827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzE4LjQiTiAyOcKwMDInMTYuOCJF!5e0!3m2!1str!2str!4v1701068185309!5m2!1str!2str" 
         },
         {
             "id": 13,
@@ -141,7 +153,8 @@
             "endDate": "23.03.2024",
             "location": {"lat": 41.0096728368617,  "lng": 28.97785663813883}, 
             "place": "İstanbul Bale Salonu",
-            "price": 75
+            "price": 75,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3010.7119815045917!2d28.9752816765464!3d41.00967681933809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzM0LjgiTiAyOMKwNTgnNDAuMyJF!5e0!3m2!1str!2str!4v1701068213216!5m2!1str!2str" 
         },
         {
             "id": 14,
@@ -152,7 +165,8 @@
             "endDate": "18.04.2024",
             "location": {"lat": 41.044724632054, "lng":  28.99240174934796},
             "place": "Music Arena",
-            "price": 60
+            "price": 60,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3009.1097665523457!2d28.98982677654756!3d41.04472861717879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAyJzQxLjAiTiAyOMKwNTknMzIuNyJF!5e0!3m2!1str!2str!4v1701068252509!5m2!1str!2str" 
         },
         {
             "id": 15,
@@ -163,7 +177,8 @@
             "endDate": "02.06.2024",
             "location": {"lat": 41.05275934501407,  "lng": 29.065708316854927},
             "place": "Kitap Dükkanı",
-            "price": 40
+            "price": 40,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3008.7423423791274!2d29.063133376547874!3d41.052763316683674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAzJzA5LjkiTiAyOcKwMDMnNTYuNiJF!5e0!3m2!1str!2str!4v1701068283606!5m2!1str!2str" 
         },
         {
             "id": 16,
@@ -174,7 +189,8 @@
             "endDate": "28.06.2024",
             "location": {"lat": 41.00508359771255, "lng": 29.03793386853193}, 
             "place": "Tech Kültür Merkezi",
-            "price": 50
+            "price": 50,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3010.9216700584793!2d29.03535897654628!3d41.00508761962053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzE4LjMiTiAyOcKwMDInMTYuNiJF!5e0!3m2!1str!2str!4v1701068334372!5m2!1str!2str" 
         },
         {
             "id": 17,
@@ -185,7 +201,8 @@
             "endDate": "23.07.2024",
             "location": {"lat": 41.04504445085783, "lng":  28.991968477570566},
             "place": "Music Arena",
-            "price": 85
+            "price": 85,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3009.0951387622185!2d28.989393576547716!3d41.04504851715908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAyJzQyLjIiTiAyOMKwNTknMzEuMSJF!5e0!3m2!1str!2str!4v1701068365759!5m2!1str!2str"
         },
         {
             "id": 18,
@@ -196,7 +213,8 @@
             "endDate": "18.08.2024",
             "location": {"lat": 41.052504831376254, "lng": 29.066553217899287},
             "place": "Kitap Dükkanı",
-            "price": 30
+            "price": 30,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3008.7539814873517!2d29.063978276547903!3d41.05250881669949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAzJzA5LjAiTiAyOcKwMDMnNTkuNiJF!5e0!3m2!1str!2str!4v1701068400009!5m2!1str!2str" 
         },
         {
             "id": 19,
@@ -207,7 +225,8 @@
             "endDate": "28.10.2024",
             "location": {"lat":41.004986203218934,"lng": 29.038313672013224},  
             "place": "Tech Kültür Merkezi",
-            "price": 40
+            "price": 40,
+            "iframeSrc":"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3010.9261202250623!2d29.035738776546268!3d41.00499021962657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDAwJzE4LjAiTiAyOcKwMDInMTcuOSJF!5e0!3m2!1str!2str!4v1701068424897!5m2!1str!2str" 
         }
     ],
     "categories":["Tiyarto","Bale","Konser","Kitap Festivali"]

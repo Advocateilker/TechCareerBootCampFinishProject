@@ -26,15 +26,15 @@ const Detail = ({ events }) => {
   return (
     <div className='detail-card'>
       <div className='detail-card-left'>
-        
-      {!event?.images && 
-        <img src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg" alt="" />
-      }
 
-{event?.images &&  <Splide className="splide"
+        {!event?.images &&
+          <img src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg" alt="" />
+        }
+
+        {event?.images && <Splide className="splide"
           options={{
             rewind: true,
-             }}
+          }}
         >
           {event?.images?.map((i) => (
             <SplideSlide>
@@ -43,17 +43,37 @@ const Detail = ({ events }) => {
 
           ))}
 
-        </Splide> }
+        </Splide>}
 
 
 
       </div>
       <div className='detail-card-rigth' >
 
-       
+        {!event ? "Yükleniyor" : (
+
+          <div>
+
+            <h3>{event.name}</h3>
+            <p>Kategori : <span>{event.category}</span></p>
+            <p>Tarih: <span> {event.startDate} - {event.endDate}</span></p>
+            <p>Price: <span> 65 &#8378;</span></p>
+            <p>Yeri: <span>{event.place}</span> </p>
+            <iframe
+              src={event?.iframeSrc}
+              width="100%"
+              height="450"
+              allowFullScreen=""
+              aria-hidden="false"
+              tabIndex="0"
+            />
 
 
-        <p>{event?.name}</p>
+          </div>
+
+
+        )}
+
 
       </div>
 
