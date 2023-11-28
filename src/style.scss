@@ -9,7 +9,7 @@
   list-style: none;
 }
 
-body{
+body {
   background-color: rgb(221, 248, 158);
 }
 
@@ -139,33 +139,53 @@ button {
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  height: 80vh;
-  gap:15px;
+  max-height: 80vh;
+  gap: 15px;
   padding: 12px 22px;
-  .card{
+
+  .card {
     border: 1px solid black;
     border-radius: 12px;
     padding: 8px 14px;
-    cursor: pointer;
-    &:hover{
+
+    .card-index {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 7px;
+    }
+
+    &:hover {
       background-color: chocolate;
       color: white;
     }
-    & h3{
-      text-align: center;
-      margin: 2px auto;
+
+    &:hover h3 {
+
+      color: white;
     }
 
-    & div p{
+    & h3 {
+      text-align: center;
+      margin: 2px auto;
+      white-space: nowrap;
+      font-size: 19px;
+      font-weight: 800;
+      color: rgb(163, 80, 20);
+
+    }
+
+    & div p {
       font-weight: 700;
-      & span{
+
+      & span {
         font-weight: 300;
       }
     }
   }
 }
 
-.detail-card{
+.detail-card {
   width: 80%;
   margin: 22px auto;
   padding: 12px 24px;
@@ -177,76 +197,87 @@ button {
   gap: 12px;
 
 
-  &:hover{
+  &:hover {
     border: 1px solid chocolate;
     border-radius: 12px;
   }
 
-  .detail-card-left{
+  .detail-card-left {
     width: 100%;
-  }
+    height: 500px;
 
-  .splide{
-    width: 100%;
-
-    & img{
-      width: 100%;
+    .splide {
+      height: 100%;
     }
 
+    img {
+      height: 430px;
+      width: 100%;
+      object-position: center;
+      object-fit: contain;
+
+    }
   }
-  
+
+
 }
 
 .home {
   width: 90%;
   margin: 12px auto;
-  .welcome{
+
+  .welcome {
     border: 1px solid transparent;
     box-shadow: 2px 2px 12px black;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 12px;
-    gap:8px;
+    gap: 8px;
 
-    p{
+    p {
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
-      img{
+
+      img {
         width: 22px;
         height: 22px;
         border-radius: 100%;
         position: absolute;
-        top:-10px;
-        left:-21px;
+        top: -10px;
+        left: -21px;
       }
-      span{
+
+      span {
         font-weight: 800;
         text-transform: uppercase;
       }
     }
 
-    
+
   }
-  .popular{
+
+  .popular {
     max-height: 80px;
 
-    .popular-index{
+    .popular-index {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 22px 0;
-      .splide{
+
+      .splide {
         height: 600px;
       }
-      img{
+
+      img {
         width: 100%;
         height: 500px;
         object-position: center;
         object-fit: contain;
-        
+
       }
 
     }
@@ -255,3 +286,49 @@ button {
   }
 }
 
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 6px 12px;
+
+  .filter-left {
+    text-align: center;
+
+    select {
+      width: 100%;
+    }
+  }
+
+  .filter-btn {
+    display: flex;
+
+    gap: 2px;
+
+    button:hover {
+      background-color: chocolate;
+      color: wheat;
+
+    }
+
+
+  }
+
+}
+
+@media (max-width:768px) {
+  .filter {
+    flex-direction: column;
+  }
+
+}
+
+.share-buttons {
+display: flex;
+justify-content: center;
+font-size: 32px;
+gap: 22px;
+a{color: chocolate;
+}
+}

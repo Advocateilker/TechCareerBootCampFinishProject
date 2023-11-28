@@ -51,7 +51,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<AuthPage user={user} />} />
         <Route path="/home" element={<Home user={user} events={events} />} />
-        <Route path="/feed" element={<ListView user={user} events={events}  />} />
+        <Route path="/feed" element={<ListView user={user} events={events} setEvents={setEvents}  />} />
         <Route path="/feed/:id" element={<Detail />} />
         <Route path='/map' element={<MapList />} />
 

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import axios from "axios"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import ShareButtons from '../components/ShareButtons';
 
 
 
@@ -34,6 +35,7 @@ const Detail = ({ events }) => {
         {event?.images && <Splide className="splide"
           options={{
             rewind: true,
+            autoplay:true,
           }}
         >
           {event?.images?.map((i,index) => (
@@ -74,6 +76,7 @@ const Detail = ({ events }) => {
 
         )}
 
+<ShareButtons event={event}/>
 
       </div>
 
