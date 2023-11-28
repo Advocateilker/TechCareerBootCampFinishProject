@@ -11,6 +11,7 @@ import Home from './pages/Home'
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from './firebase/config'
 import axios from 'axios';
+import PlaceEvents from './pages/PlaceEvents'
 
 
 const App = () => {
@@ -53,6 +54,7 @@ const App = () => {
         <Route path="/home" element={<Home user={user} events={events} />} />
         <Route path="/feed" element={<ListView user={user} events={events} setEvents={setEvents}  />} />
         <Route path="/feed/:id" element={<Detail />} />
+        <Route path="/place/:place" element={<PlaceEvents events={events}  />} />
         <Route path='/map' element={<MapList />} />
 
       </Routes>
