@@ -247,7 +247,6 @@
             {
                 "id": 2,
                 "name": "Rock Konseri",
-
                 "category": "Müzik",
                 "startDate": "12.03.2023",
                 "endDate": "15.03.2023",
@@ -258,7 +257,6 @@
             {
                 "id": 3,
                 "name": "Moda Defilesi",
-
                 "category": "Moda",
                 "startDate": "20.04.2023",
                 "endDate": "25.04.2023",
@@ -269,7 +267,6 @@
             {
                 "id": 4,
                 "name": "Gastronomi Festivali",
-
                 "category": "Festival",
                 "startDate": "10.05.2023",
                 "endDate": "15.05.2023",
@@ -280,7 +277,6 @@
             {
                 "id": 5,
                 "name": "Bilim Kongresi",
-
                 "category": "Bilim",
                 "startDate": "01.06.2023",
                 "endDate": "05.06.2023",
@@ -291,7 +287,6 @@
             {
                 "id": 6,
                 "name": "Tango Gecesi",
-
                 "category": "Dans",
                 "startDate": "15.07.2023",
                 "endDate": "20.07.2023",
@@ -302,7 +297,6 @@
             {
                 "id": 7,
                 "name": "Gösteri Sanatları Festivali",
-
                 "category": "Festival",
                 "startDate": "10.08.2023",
                 "endDate": "15.08.2023",
@@ -313,7 +307,6 @@
             {
                 "id": 8,
                 "name": "Astronomi Gözlem Gecesi",
-
                 "category": "Bilim",
                 "startDate": "05.09.2023",
                 "endDate": "10.09.2023",
