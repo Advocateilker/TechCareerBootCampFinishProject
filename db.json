@@ -230,6 +230,102 @@
         }
         
     ],
-    "categories":["Tiyatro","Bale","Konser","Kitap Festivali"]
+    "categories":["Tiyatro","Bale","Konser","Kitap Festivali"],
+
+    "outdated":[
+        
+            {
+                "id": 1,
+                "name": "Robotik Kodlama Kampı",
+                "category": "Eğitim",
+                "startDate": "05.02.2023",
+                "endDate": "10.02.2023",
+                "location": {"lat": 41.0082, "lng": 28.9784},
+                "place": "Bilim ve Teknoloji Merkezi",
+                "price": 50
+            },
+            {
+                "id": 2,
+                "name": "Rock Konseri",
+
+                "category": "Müzik",
+                "startDate": "12.03.2023",
+                "endDate": "15.03.2023",
+                "location": {"lat": 41.0123, "lng": 28.9767},
+                "place": "Rock Arena",
+                "price": 60
+            },
+            {
+                "id": 3,
+                "name": "Moda Defilesi",
+
+                "category": "Moda",
+                "startDate": "20.04.2023",
+                "endDate": "25.04.2023",
+                "location": {"lat": 41.0055, "lng": 28.9883},
+                "place": "Moda Salonu",
+                "price": 40
+            },
+            {
+                "id": 4,
+                "name": "Gastronomi Festivali",
+
+                "category": "Festival",
+                "startDate": "10.05.2023",
+                "endDate": "15.05.2023",
+                "location": {"lat": 41.0111, "lng": 28.9835},
+                "place": "Lezzet Meydanı",
+                "price": 45
+            },
+            {
+                "id": 5,
+                "name": "Bilim Kongresi",
+
+                "category": "Bilim",
+                "startDate": "01.06.2023",
+                "endDate": "05.06.2023",
+                "location": {"lat": 41.0077, "lng": 28.9757},
+                "place": "Bilim Merkezi",
+                "price": 55
+            },
+            {
+                "id": 6,
+                "name": "Tango Gecesi",
+
+                "category": "Dans",
+                "startDate": "15.07.2023",
+                "endDate": "20.07.2023",
+                "location": {"lat": 41.0042, "lng": 28.9821},
+                "place": "Dans Salonu",
+                "price": 35
+            },
+            {
+                "id": 7,
+                "name": "Gösteri Sanatları Festivali",
+
+                "category": "Festival",
+                "startDate": "10.08.2023",
+                "endDate": "15.08.2023",
+                "location": {"lat": 41.0033, "lng": 28.9799},
+                "place": "Sanat Meydanı",
+                "price": 50
+            },
+            {
+                "id": 8,
+                "name": "Astronomi Gözlem Gecesi",
+
+                "category": "Bilim",
+                "startDate": "05.09.2023",
+                "endDate": "10.09.2023",
+                "location": {"lat": 41.0066, "lng": 28.9773},
+                "place": "Gözlemevi",
+                "price": 30
+            }
+        ]
+        
+        }
     
-}
+
+    
+    
+
