@@ -5,7 +5,7 @@ const Header = () => {
   const navigate=useNavigate()
   return (
     <header>
-      <div onClick={()=>navigate("/home")} className='left'>LOGO</div>
+      <div onClick={()=>navigate("/home")} className='left'>BiletEdin</div>
       <div className='right'>
         <NavLink to={"/feed"}>Liste Görünümü</NavLink>
         <NavLink to={"/map"}>Harita Görünümü</NavLink>
