@@ -1,12 +1,19 @@
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { auth } from '../firebase/config';
+import { signOut } from "firebase/auth";
+import { useNavigate } from 'react-router-dom';
+import ToAuthPage from '../components/ToAuthPage';
+
+
 
 const Home = ({ user, events }) => {
 
   console.log(user, events)
+  const navigate=useNavigate()
 
   if (!user || !events) {
-    return <div>YÜkleniyor</div>
+    return <ToAuthPage/>
   }
 
   const popularEvents = events.filter((e) => e.images && e.images.length > 0);
@@ -17,6 +24,12 @@ const Home = ({ user, events }) => {
       <div className='welcome'>
 
         <p><img src={user?.photoURL} alt="" />Hoşgeldiniz, <span>{user?.displayName}</span> </p>
+
+        <span onClick={()=>{
+          signOut(auth);
+          navigate("/")
+          window.location.reload()
+          }} className='sign-out'>Çıkış Yap</span>
 
       </div>
       <div className='popular'>

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Filter from '../components/Filter';
 import { useSearchParams,useNavigate } from 'react-router-dom';
+import ToAuthPage from '../components/ToAuthPage';
 
 
 const ListView = ({ events, user, }) => {
@@ -97,12 +98,7 @@ const ListView = ({ events, user, }) => {
   }
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90%', marginTop: '88px' }}>
-      Yetkisiz Sayfadasınız Lütfen Giriş Yapmak İçin{' '}
-      <span style={{ color: 'red', textDecoration: 'underline' }} onClick={() => navigate('/')}>
-        Tıklayınız
-      </span>{' '}
-    </div>
+<ToAuthPage/>
   );
 };
 

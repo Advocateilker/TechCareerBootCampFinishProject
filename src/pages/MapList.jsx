@@ -10,8 +10,9 @@ import {
     Polyline
 } from 'react-leaflet'
 import "leaflet/dist/leaflet.css"
+import ToAuthPage from '../components/ToAuthPage';
 
-const MapList = () => {
+const MapList = ({user}) => {
 
 
     const navigate = useNavigate()
@@ -24,6 +25,10 @@ const MapList = () => {
             .then((res) => setEvents(res.data))
             .catch((err) => console.log(err))
     }, [])
+
+    if (!user || !events) {
+        return <ToAuthPage/>
+      }
 
     return (
         <div className='mapView'>

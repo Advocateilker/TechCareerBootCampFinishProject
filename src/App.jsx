@@ -56,8 +56,8 @@ const App = () => {
         <Route path="/feed" element={<ListView user={user} events={events} setEvents={setEvents}  />} />
         <Route path="/feed/:id" element={<Detail />} />
         <Route path="/place/:place" element={<PlaceEvents events={events}  />} />
-        <Route path='/map' element={<MapList />} />
-        <Route path='/outdated' element={<OutDated />} />
+        <Route path='/map' element={<MapList user={user} />} />
+        <Route path='/outdated' element={<OutDated user={user} />} />
 
 
       </Routes>
