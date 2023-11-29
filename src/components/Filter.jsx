@@ -4,7 +4,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
-const Filter = ({ onFilterChange,filterDate,showAll}) => {
+const Filter = ({ onFilterChange, selectedOption, setSelectedOption,events, filterDate, showAll }) => {
   const [category, setCategory] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -33,9 +33,18 @@ const Filter = ({ onFilterChange,filterDate,showAll}) => {
     e.target[0].value = '';
   };
 
+  const uniqueDistricts = [...new Set(events.map(event => event.district))];
+
+ 
+  const handleSelectChange = (event) => {
+    const selectedValue = event.target.value;
+    setSelectedOption(selectedValue);
+    onFilterChange({ district: selectedValue }); // ilçe seçildiğinde filtreleme yap
+  };
+
   return (
     <div className="filter">
-      <div  className='filter-left'>
+      <div className='filter-left'>
         <label className="">Kategori Seç</label>
         <select value={searchParams.get('category')} onChange={handleChange} className="">
           <option>Hepsi</option>
@@ -47,9 +56,16 @@ const Filter = ({ onFilterChange,filterDate,showAll}) => {
         </select>
       </div>
       <div className="filter-btn">
-        <button onClick={()=>filterDate("2023")} type="button" className="btn btn-warning">2023 Yılı Etkinlikleri</button>
-        <button onClick={()=>filterDate("2024")} type="button" className="btn btn-success">2024 Yılı Etkinlikleri</button>
-        <button onClick={()=>showAll()} type="button" className="btn btn-danger">Tümü</button>
+        <button onClick={() => filterDate("2023")} type="button" className="btn btn-warning">2023 Yılı Etkinlikleri</button>
+        <button onClick={() => filterDate("2024")} type="button" className="btn btn-success">2024 Yılı Etkinlikleri</button>
+        <button onClick={() => showAll()} type="button" className="btn btn-danger">Tümü</button>
+      </div>
+      <div className='filter-left'>
+      <label className="">İlçe Seç</label>
+        <select  value={selectedOption} onChange={handleSelectChange} >
+          <option value="all">Hepsi</option>
+          {uniqueDistricts?.map((u)=> <option value={u}>{u}</option> )}
+        </select>
 
       </div>
 

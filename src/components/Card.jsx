@@ -21,6 +21,7 @@ const Card = ({ event }) => {
         <div  className='card'>
             <div className='card-index'>
                 <h3>{event?.name}</h3>
+                <hr />
                 <p>Kategori : <span>{event?.category}</span></p>
                 <p>Tarih: <span> {event?.startDate} - {event?.endDate}</span></p>
                 <p className='place'
@@ -29,8 +30,9 @@ const Card = ({ event }) => {
                 onMouseLeave={handleHover}
                 onClick={()=> navigate(`/place/${event?.place}`)}>Yeri: <span>{event?.place}</span>
                 <span style={{visibility: isHover===true?"visible":"hidden"}} className='hover'>Mekan Tıklayarak Aynı Mekandaki Diğer Etkinlikleri görebilirsiniz</span> </p>
+                <p>İlçe: <span>{event.district}</span> </p>
                 <p>Price: <span> 65 &#8378;</span></p>
-                <button onClick={()=> navigate(`/feed/${event.id}`)}>Detaylara Git</button>
+                <button className='btn btn-secondary' onClick={()=> navigate(`/feed/${event.id}`)}>Detaylara Git</button>
             </div>
         </div>
     )

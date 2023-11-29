@@ -1,18 +1,17 @@
-
-import { useNavigate } from 'react-router-dom';
 import Card from '../components/Card';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Filter from '../components/Filter';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams,useNavigate } from 'react-router-dom';
 
 
-const ListView = ({ events, user, setEvents }) => {
+const ListView = ({ events, user, }) => {
+  const [selectedOption, setSelectedOption] = useState(null);
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query');
   const category = searchParams.get('category');
- 
+
   const [filteredEvents, setFilteredEvents] = useState(events);
 
   const options = {
@@ -42,41 +41,51 @@ const ListView = ({ events, user, setEvents }) => {
 
 
 
-
-  const handleFilterChange = ({ category, query }) => {
-    // Sıfırlama işlemi
-    if (category === undefined && query === undefined) {
-      setSearchParams('');
+  const handleFilterChange = ({ category, query, district }) => {
+    if (category === undefined && query === undefined && district === 'all') {
+      // Hepsi seçildiyse, tüm etkinlikleri listeleyin
+      setFilteredEvents(events);
     } else {
-      if (category !== undefined) {
-        searchParams.set('category', category);
+      // Diğer durumlarda filtreleme işlemlerini gerçekleştir
+      if (district !== undefined && district !== 'all') {
+        // Eğer ilçe belirtilmişse, sadece ilçeye göre filtrele
+        const filteredByDistrict = events.filter((event) => event.district === district);
+        setFilteredEvents(filteredByDistrict);
+      } else {
+        // İlçe belirtilmemişse, diğer filtreleme işlemlerini gerçekleştir
+        if (category !== undefined) {
+          searchParams.set('category', category);
+        }
+        if (query !== undefined) {
+          searchParams.set('query', query);
+        }
+        setSearchParams(searchParams);
       }
-      if (query !== undefined) {
-        searchParams.set('query', query);
-      }
-      setSearchParams(searchParams);
     }
   };
+  
 
-  const filterDate=(date)=>{
+  const filterDate = (date) => {
     const filtered = events?.filter((i) => i.startDate.includes(date));
     setFilteredEvents(filtered)
   }
 
-  const showAll=()=>{
+  const showAll = () => {
     setFilteredEvents(events)
   }
+
+  console.log(selectedOption)
 
 
   if (user) {
     return (
       <>
         <Filter
-        filterDate={filterDate}
-        showAll={showAll}
-
-          setEvents={setEvents}
-
+        selectedOption={selectedOption}
+        setSelectedOption={setSelectedOption}
+          filterDate={filterDate}
+          showAll={showAll}
+          events={events}
           onFilterChange={handleFilterChange} />
         <div className="card-container">
           {filteredEvents?.map((event) => (
