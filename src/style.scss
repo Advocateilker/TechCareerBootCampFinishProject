@@ -316,12 +316,15 @@ button {
 
   .filter-left {
     text-align: center;
+    height: 100%;
 
     select {
       width: 100%;
     }
   }
-
+  form{
+    height: 100%;
+  }
   .filter-btn {
     display: flex;
 

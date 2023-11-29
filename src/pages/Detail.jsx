@@ -60,7 +60,11 @@ const Detail = ({ events }) => {
             <p>Kategori : <span>{event.category}</span></p>
             <p>Tarih: <span> {event.startDate} - {event.endDate}</span></p>
             <p>Price: <span> 65 &#8378;</span></p>
-            <p>Yeri: <span>{event.place}</span> </p>
+            <h5 className='text-decoration-underline text-primary'>Fiyatlar</h5>
+                {event?.price?.map((p, i) => (
+                    <p className='fw-bold'>Kategori-{i+1} : <span className='text-secondary font-italic'> {p} &#8378;</span></p>
+
+                ))}
             <iframe
               src={event?.iframeSrc}
               width="100%"
