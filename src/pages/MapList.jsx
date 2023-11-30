@@ -13,7 +13,6 @@ const MapList = ({user,events}) => {
     if (!user || !events) {
         return <ToAuthPage/>
       }
-
     return (
         <div className='mapView'>
             <MapContainer style={{ height: "100%", width: "100%" }} center={[41.01, 29.01]} zoom={13} scrollWheelZoom={true}>
@@ -33,11 +32,8 @@ const MapList = ({user,events}) => {
                             <button onClick={()=> navigate(`/feed/${e.id}`)}>Detaylar</button>
                         </Popup>
                     </Marker>
-
                 ))}
-
             </MapContainer>
-
         </div>
     )
 }
