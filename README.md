@@ -45,3 +45,29 @@ Proje, farklı bileşenlere ve sayfalara ayrılmıştır:
 * Sağlanan paylaşım düğmelerini kullanarak etkinlikleri sosyal medyada paylaşın.
 * Proje hakkında sorularınız veya katkılarınız varsa lütfen konu veya çekme isteği göndererek katkıda bulunun.
 
+## Ekran Görüntüleri
+
+* DetailPage
+
+![](./public/detail.gif)
+
+* AuthPage
+
+![](./public/authpage.png)
+
+* HomePage
+
+![](./public/homepage.png)
+
+* ListPage
+
+![](./public/listpage.png)
+
+* MapPage
+
+![](./public/mappage.png)
+
+* OutdatedPage
+
+![](./public/outdatedpage.png)
+
