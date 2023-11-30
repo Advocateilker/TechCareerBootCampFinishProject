@@ -17,11 +17,20 @@ const Filter = ({ onFilterChange, selectedOption, setSelectedOption,events, filt
 
   const handleChange = (e) => {
     const selectedCategory = e.target.value;
-    const newCategory = selectedCategory === 'Hepsi' ? undefined : selectedCategory;
-    searchParams.set('order', 'asc');
+    const newCategory = selectedCategory
+  
+    console.log(newCategory);
+  
+    // Arama parametrelerini güncelle
+    searchParams.set('category', newCategory);
     setSearchParams(searchParams);
+  
+    // Filtre değişikliğini tetikle
     onFilterChange({ category: newCategory });
   };
+  
+  
+  
 
 
   const handleSubmit = (e) => {
@@ -47,7 +56,6 @@ const Filter = ({ onFilterChange, selectedOption, setSelectedOption,events, filt
       <div className='filter-left'>
         <label className="">Kategori Seç</label>
         <select value={searchParams.get('category')} onChange={handleChange} className="">
-          <option>Hepsi</option>
           {category?.map((c) => (
             <option key={c} value={c}>
               {c}
@@ -63,7 +71,6 @@ const Filter = ({ onFilterChange, selectedOption, setSelectedOption,events, filt
       <div className='filter-left'>
       <label className="">İlçe Seç</label>
         <select  value={selectedOption} onChange={handleSelectChange} >
-          <option value="all">Hepsi</option>
           {uniqueDistricts?.map((u)=> <option value={u}>{u}</option> )}
         </select>
 

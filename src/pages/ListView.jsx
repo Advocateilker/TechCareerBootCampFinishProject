@@ -41,29 +41,28 @@ const ListView = ({ events, user, }) => {
   }, []);
 
 
-
   const handleFilterChange = ({ category, query, district }) => {
-    if (category === undefined && query === undefined && district === 'all') {
+    if (!query && !category && district === 'all') {
       // Hepsi seçildiyse, tüm etkinlikleri listeleyin
       setFilteredEvents(events);
     } else {
       // Diğer durumlarda filtreleme işlemlerini gerçekleştir
-      if (district !== undefined && district !== 'all') {
+      let filteredList = events;
+  
+      if (district !== 'all') {
         // Eğer ilçe belirtilmişse, sadece ilçeye göre filtrele
-        const filteredByDistrict = events.filter((event) => event.district === district);
-        setFilteredEvents(filteredByDistrict);
-      } else {
-        // İlçe belirtilmemişse, diğer filtreleme işlemlerini gerçekleştir
-        if (category !== undefined) {
-          searchParams.set('category', category);
-        }
-        if (query !== undefined) {
-          searchParams.set('query', query);
-        }
-        setSearchParams(searchParams);
+        filteredList = filteredList.filter((event) => event.district === district);
       }
+  
+      if (category !== undefined) {
+        // Kategori belirtilmişse, kategoriye göre filtrele
+        filteredList = filteredList.filter((event) => event.category === category);
+      }
+  
+      setFilteredEvents(filteredList);
     }
   };
+  
   
 
   const filterDate = (date) => {
