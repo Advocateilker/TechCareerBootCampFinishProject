@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 const Filter = ({ onFilterChange, query, setStartDate, setEndDate, handleFilter, startDate, endDate, handleClearDate }) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const handleSubmit = (e) => {
@@ -30,8 +31,14 @@ const Filter = ({ onFilterChange, query, setStartDate, setEndDate, handleFilter,
           />
         </div>
         <div className='date-buttons'>
-          <button className='btn date-btn' onClick={handleFilter}>Filtrele</button>
-          <button className='btn date-btn' onClick={handleClearDate}>Temizle</button>
+          <button className='btn date-btn' onClick={()=>{
+            handleFilter();
+            toast.success(`${startDate} ve ${endDate} tarihleri arası filtrelendi.`)
+            }}>Filtrele</button>
+          <button className='btn date-btn' onClick={()=>{
+            handleClearDate();
+            toast.warning(`tarih filteresi temizlendi`)
+            }}>Temizle</button>
         </div>
       </div>
       <form onSubmit={handleSubmit} className="d-flex gap-1">
