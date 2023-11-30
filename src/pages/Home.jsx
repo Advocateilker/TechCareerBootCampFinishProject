@@ -4,43 +4,30 @@ import { auth } from '../firebase/config';
 import { signOut } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
 import ToAuthPage from '../components/ToAuthPage';
-
-
-
 const Home = ({ user, events }) => {
-
-  console.log(user, events)
-  const navigate=useNavigate()
-
+  const navigate = useNavigate()
   if (!user || !events) {
-    return <ToAuthPage/>
+    return <ToAuthPage />
   }
-
-  const popularEvents = events.filter((e) => e.images && e.images.length > 0);
-
-
+  const popularEvents = events.filter((e) => e.images && e.images.length > 1);
   return (
     <div className='home'>
       <div className='welcome'>
-
         <p><img src={user?.photoURL} alt="" />Hoşgeldiniz, <span>{user?.displayName}</span> </p>
-
-        <span onClick={()=>{
+        <span onClick={() => {
           signOut(auth);
           navigate("/")
           window.location.reload()
-          }} className='sign-out'>Çıkış Yap</span>
-
+        }} className='sign-out'>Çıkış Yap</span>
       </div>
       <div className='popular'>
-        <h1 style={{textAlign:"center",marginTop:"12px"}}>POPÜLER ETKİNLİKLER</h1>
+        <h1 style={{ textAlign: "center", marginTop: "12px" }}>POPÜLER ETKİNLİKLER</h1>
         <Splide className="splide"
           options={{
             rewind: true,
-            autoplay:true,
+            autoplay: true,
           }}
         >
-
           {popularEvents?.map((p) => (
             <SplideSlide>
               <div className='popular-index'>
@@ -49,15 +36,12 @@ const Home = ({ user, events }) => {
                 <p>Tarih: <span> {p.startDate} - {p.endDate}</span></p>
                 <p>Yeri: <span>{p.place}</span> </p>
                 <p>Price: <span> 65 &#8378;</span></p>
-                <img src={p.images[0]} alt="" />
+                <img src={p.images[1]} alt="" />
               </div>
             </SplideSlide>
           ))}
         </Splide>
-
       </div>
-
-
     </div>
   )
 }
