@@ -20,7 +20,7 @@ const Card = ({ event }) => {
                     onMouseEnter={handleHover}
                     onMouseLeave={handleHover}
                     onClick={() => navigate(`/place/${event?.place}`)}>Yeri: <span>{event?.place}</span>
-                    <span style={{ visibility: isHover === true ? "visible" : "hidden" }} className='hover'>Tıklayınız</span> </p>
+                    <span style={{ visibility: isHover === true ? "visible" : "hidden" }} className='hover'>Diğer Etkinlikler için Tıklayınız</span> </p>
                 <p>İlçe: <span>{event.district}</span> </p>
                 <h5 className='text-decoration-underline'>Fiyatlar</h5>
                 {event?.price?.map((p, i) => (
@@ -29,8 +29,6 @@ const Card = ({ event }) => {
                 <button className='btn btn-secondary' onClick={() => {
                     navigate(`/feed/${event.id}`);
                     toast.success("Detay Sayfasına Geçiş Yapıldı")
-
-
                 }}>Detaylara Git</button>
             </div>
         </div>
