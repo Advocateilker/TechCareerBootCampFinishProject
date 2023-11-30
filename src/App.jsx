@@ -13,27 +13,15 @@ import { auth } from './firebase/config'
 import axios from 'axios';
 import PlaceEvents from './pages/PlaceEvents'
 import OutDated from './pages/OutDated'
-
-
 const App = () => {
-
   const [user, setUser] = useState()
-
   onAuthStateChanged(auth, (user) => {
     if (user) {
       setUser(user)
-      // ...
     } else {
-      // User is signed out
-      // ...
     }
   });
-
   const [events,setEvents]=useState([])
-
-
-
-
   useEffect(()=>{
     axios.get("http://localhost:3038/events")
     .then((res)=>setEvents(res.data))
@@ -41,12 +29,6 @@ const App = () => {
 
 
   },[])
-  
-
-
-
-  //console.log(user)
-
   return (
     <BrowserRouter>
       <Header />
@@ -58,12 +40,7 @@ const App = () => {
         <Route path="/place/:place" element={<PlaceEvents events={events}  />} />
         <Route path='/map' element={<MapList user={user} events={events} />} />
         <Route path='/outdated' element={<OutDated user={user} />} />
-
-
       </Routes>
-
-
-
     </BrowserRouter>
 
   )
