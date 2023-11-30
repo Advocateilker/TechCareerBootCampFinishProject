@@ -27,7 +27,7 @@ const AuthPage = ({ user }) => {
                     <p>Devam Etmek İçin Giriş Yapınız</p>
                     <button onClick={handleLogin}>
                         <img src="./google.png" alt="" />
-                        <span>Sign in with Google</span>
+                        <span>Google ile Giriş Yap</span>
                     </button>
                 </div>
 
