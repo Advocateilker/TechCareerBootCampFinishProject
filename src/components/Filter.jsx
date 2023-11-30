@@ -1,22 +1,7 @@
-
-import axios from 'axios';
 import React from 'react';
-import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-
-const Filter = ({ onFilterChange, query, setStartDate, setEndDate,handleFilter,startDate,endDate,handleClearDate }) => {
-  const [category, setCategory] = useState([]);
+const Filter = ({ onFilterChange, query, setStartDate, setEndDate, handleFilter, startDate, endDate, handleClearDate }) => {
   const [searchParams, setSearchParams] = useSearchParams();
-
-  useEffect(() => {
-    axios
-      .get('http://localhost:3038/categories')
-      .then((res) => setCategory(res.data))
-      .catch((err) => console.log(err));
-  }, []);
-
-
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const query = e.target[0].value;
@@ -25,12 +10,8 @@ const Filter = ({ onFilterChange, query, setStartDate, setEndDate,handleFilter,s
     onFilterChange({ query });
     e.target[0].value = '';
   };
-
-
-
   return (
     <div className="filter">
-
       <div className='date-filter'>
         <div className='date-input'>
           <label>Start Date</label>
@@ -49,16 +30,10 @@ const Filter = ({ onFilterChange, query, setStartDate, setEndDate,handleFilter,s
           />
         </div>
         <div className='date-buttons'>
-        <button className='btn date-btn' onClick={handleFilter}>Filtrele</button>
-        <button className='btn date-btn' onClick={handleClearDate}>Temizle</button>
-
+          <button className='btn date-btn' onClick={handleFilter}>Filtrele</button>
+          <button className='btn date-btn' onClick={handleClearDate}>Temizle</button>
         </div>
-
-
       </div>
-
-
-
       <form onSubmit={handleSubmit} className="d-flex gap-1">
         <input placeholder="Etkinlik & Mekan Ara" className="form-control" type="text" />
         <button className="btn btn-success">{!query ? "Ara" : "Temizle"}</button>
