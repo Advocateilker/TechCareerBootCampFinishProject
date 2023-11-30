@@ -1,31 +1,15 @@
 import React from 'react'
-import axios from 'axios';
-import { useState, useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
 import {
     MapContainer,
     TileLayer,
     Marker,
-    Popup,
-    Polyline
+    Popup
 } from 'react-leaflet'
 import "leaflet/dist/leaflet.css"
 import ToAuthPage from '../components/ToAuthPage';
-
-const MapList = ({user}) => {
-
-
+const MapList = ({user,events}) => {
     const navigate = useNavigate()
-    const [events, setEvents] = useState([])
-
-
-
-    useEffect(() => {
-        axios.get("http://localhost:3038/events")
-            .then((res) => setEvents(res.data))
-            .catch((err) => console.log(err))
-    }, [])
-
     if (!user || !events) {
         return <ToAuthPage/>
       }
