@@ -2,9 +2,7 @@ import React from 'react';
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-const ShareButtons = ({ event }) => {
-    const shareText = `Hey, check out this event: ${event?.name} on ${event?.startDate} at ${event?.place}`;
-
+const ShareButtons = () => {
     const instagramShareLink = `https://www.instagram.com`;
     const twitterShareLink = `https://twitter.com`;
     const facebookShareLink = `https://www.facebook.com`;
@@ -12,8 +10,6 @@ const ShareButtons = ({ event }) => {
     return (
         <div className="share-buttons">
            
-
-
                 <a href={instagramShareLink} target="_blank" rel="noopener noreferrer">
                     <FaInstagram />
 
