@@ -271,6 +271,56 @@ button {
   form {
     height: 100%;
   }
+.date-filter{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .date-input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    label{
+      font-weight: 600;
+    }
+
+    input{
+
+      padding: 3px 6px;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+    }
+
+  }
+
+  .date-buttons{
+    display: flex;
+    gap: 3px;
+    .date-btn{
+      border: 1px solid khaki;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 8px 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all .2s;
+      &:hover{
+        background-color: rgb(247, 198, 198);
+        color: #1a1a1a;
+        box-shadow: 1px 1px 5px black;
+      }
+    }
+
+  }
+
+
+
+
+}
+
+
 
   .filter-btn {
     display: flex;

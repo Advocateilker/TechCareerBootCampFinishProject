@@ -11,6 +11,8 @@ const ListView = ({ events, user, }) => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query');
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
 
   const [filteredEvents, setFilteredEvents] = useState(events);
   const [categories, setCategories] = useState([]);
@@ -83,6 +85,20 @@ const ListView = ({ events, user, }) => {
 
   }
 
+  const handleDate= () => {
+    const filtered = events.filter(event => {
+      const eventDate = new Date(event.startDate);
+      return eventDate >= new Date(startDate) && eventDate <= new Date(endDate);
+    });
+    setFilteredEvents(filtered);
+  };
+
+  const handleClearDate = () => {
+    setStartDate('');
+    setEndDate('');
+    setFilteredEvents(events);
+  };
+
 
 
 
@@ -95,6 +111,12 @@ const ListView = ({ events, user, }) => {
           events={events}
           onFilterChange={handleFilterChange}
           query={query}
+          setStartDate={setStartDate}
+          setEndDate={setEndDate}
+          handleFilter={handleDate}
+          startDate={startDate}
+          endDate={endDate}
+          handleClearDate={handleClearDate}
         />
         <div className='main-section'>
           <Sidebar
