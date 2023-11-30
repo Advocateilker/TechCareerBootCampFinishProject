@@ -24,9 +24,6 @@ const ListView = ({ events, user, }) => {
       .catch((err) => console.log(err));
   }, []);
 
-
-  console.log(categories)
-
   const options = {
     params: {
       _sort: "name",
@@ -51,26 +48,16 @@ const ListView = ({ events, user, }) => {
 
   const handleFilterChange = ({ query }) => {
     if (!query) {
-      // Hepsi seçildiyse, tüm etkinlikleri listeleyin
+
       setFilteredEvents(events);
     } else {
-      // Diğer durumlarda filtreleme işlemlerini gerçekleştir
+
       let filteredList = events;
 
       setFilteredEvents(filteredList);
     }
   };
 
-
-
-  const filterDate = (date) => {
-    const filtered = events?.filter((i) => i.startDate.includes(date));
-    setFilteredEvents(filtered)
-  }
-
-  const showAll = () => {
-    setFilteredEvents(events)
-  }
 
   const filterCategory = (c) => {
 
@@ -85,7 +72,7 @@ const ListView = ({ events, user, }) => {
 
   }
 
-  const handleDate= () => {
+  const handleDate = () => {
     const filtered = events.filter(event => {
       const eventDate = new Date(event.startDate);
       return eventDate >= new Date(startDate) && eventDate <= new Date(endDate);
@@ -98,17 +85,10 @@ const ListView = ({ events, user, }) => {
     setEndDate('');
     setFilteredEvents(events);
   };
-
-
-
-
   if (user) {
     return (
       <>
         <Filter
-          filterDate={filterDate}
-          showAll={showAll}
-          events={events}
           onFilterChange={handleFilterChange}
           query={query}
           setStartDate={setStartDate}
@@ -134,7 +114,6 @@ const ListView = ({ events, user, }) => {
       </>
     );
   }
-
   return (
     <ToAuthPage />
   );
