@@ -32,7 +32,7 @@ const MapList = ({user}) => {
 
     return (
         <div className='mapView'>
-            <MapContainer style={{ height: "100%", width: "100%" }} center={[41.05, 29.09]} zoom={13} scrollWheelZoom={true}>
+            <MapContainer style={{ height: "100%", width: "100%" }} center={[41.01, 29.01]} zoom={13} scrollWheelZoom={true}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
