@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink, useNavigate } from "react-router-dom";
-
 const Header = () => {
   const navigate=useNavigate()
   return (
@@ -11,8 +10,6 @@ const Header = () => {
         <NavLink to={"/map"}>Harita Görünümü</NavLink>
         <NavLink to={"/outdated"}>Zamanı Geçmiş</NavLink>
       </div>
-
-
     </header>
   )
 }
