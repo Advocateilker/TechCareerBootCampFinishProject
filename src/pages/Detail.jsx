@@ -3,52 +3,35 @@ import { useParams } from 'react-router-dom';
 import axios from "axios"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import ShareButtons from '../components/ShareButtons';
-
-
-
-const Detail = ({ events }) => {
-
+const Detail = () => {
   let { id } = useParams();
-
   const [event, setEvent] = useState()
-
   console.log(id)
-
   useEffect(() => {
     axios.get(`http://localhost:3038/events/${id}`)
       .then((res) => setEvent(res.data))
       .catch((err) => console.log(err))
 
-  }
-    , [id]);
-
-  console.log(event)
-
+  },[id]);
   return (
     <div className='detail-card'>
       <div className='detail-card-left'>
-
         {!event?.images &&
           <img src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg" alt="" />
         }
-
         {event?.images && <Splide className="splide"
           options={{
             rewind: true,
-            autoplay:true,
+            autoplay: true,
           }}
         >
-          {event?.images?.map((i,index) => (
+          {event?.images?.map((i, index) => (
             <SplideSlide>
               <img key={index} src={i} alt="Image 1" />
             </SplideSlide>
 
           ))}
-
         </Splide>}
-
-
-
       </div>
       <div className='detail-card-rigth' >
 
@@ -61,10 +44,10 @@ const Detail = ({ events }) => {
             <p>Tarih: <span> {event.startDate} - {event.endDate}</span></p>
             <p>Price: <span> 65 &#8378;</span></p>
             <h5 className='text-decoration-underline text-primary'>Fiyatlar</h5>
-                {event?.price?.map((p, i) => (
-                    <p className='fw-bold'>Kategori-{i+1} : <span className='text-secondary font-italic'> {p} &#8378;</span></p>
+            {event?.price?.map((p, i) => (
+              <p className='fw-bold'>Kategori-{i + 1} : <span className='text-secondary font-italic'> {p} &#8378;</span></p>
 
-                ))}
+            ))}
             <iframe
               src={event?.iframeSrc}
               width="100%"
@@ -74,13 +57,11 @@ const Detail = ({ events }) => {
               tabIndex="0"
             />
 
-
           </div>
-
 
         )}
 
-<ShareButtons event={event}/>
+        <ShareButtons event={event} />
 
       </div>
 
