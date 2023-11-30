@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 const Card = ({ event }) => {
     const navigate = useNavigate()
     const [isHover, setIsHover] = useState(false)
@@ -19,13 +20,18 @@ const Card = ({ event }) => {
                     onMouseEnter={handleHover}
                     onMouseLeave={handleHover}
                     onClick={() => navigate(`/place/${event?.place}`)}>Yeri: <span>{event?.place}</span>
-                    <span style={{ visibility: isHover === true ? "visible" : "hidden" }} className='hover'>Mekan Tıklayarak Aynı Mekandaki Diğer Etkinlikleri görebilirsiniz</span> </p>
+                    <span style={{ visibility: isHover === true ? "visible" : "hidden" }} className='hover'>Tıklayınız</span> </p>
                 <p>İlçe: <span>{event.district}</span> </p>
                 <h5 className='text-decoration-underline'>Fiyatlar</h5>
                 {event?.price?.map((p, i) => (
                     <p>Kategori-{i + 1} : <span className='font-italic' > {p} &#8378;</span></p>
                 ))}
-                <button className='btn btn-secondary' onClick={() => navigate(`/feed/${event.id}`)}>Detaylara Git</button>
+                <button className='btn btn-secondary' onClick={() => {
+                    navigate(`/feed/${event.id}`);
+                    toast.success("Detay Sayfasına Geçiş Yapıldı")
+
+
+                }}>Detaylara Git</button>
             </div>
         </div>
     )
