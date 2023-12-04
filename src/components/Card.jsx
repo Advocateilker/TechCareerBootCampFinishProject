@@ -14,7 +14,7 @@ const Card = ({ event }) => {
                 <h3>{event?.name}</h3>
                 <hr />
                 <p>Kategori : <span>{event?.category}</span></p>
-                <p>Tarih: <span> {event?.startDate} - {event?.endDate}</span></p>
+                <p>Tarih : <span> {event?.startDate} - {event?.endDate}</span></p>
                 <p className='place'
 
                     onMouseEnter={handleHover}
@@ -24,7 +24,7 @@ const Card = ({ event }) => {
                 <p>İlçe: <span>{event.district}</span> </p>
                 <h5 className='text-decoration-underline'>Fiyatlar</h5>
                 {event?.price?.map((p, i) => (
-                    <p>Kategori-{i + 1} : <span className='font-italic' > {p} &#8378;</span></p>
+                    <p>Kategori - {i + 1} : <span className='font-italic' > {p} &#8378;</span></p>
                 ))}
                 <button className='btn btn-secondary' onClick={() => {
                     navigate(`/feed/${event.id}`);
