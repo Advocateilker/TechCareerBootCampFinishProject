@@ -6,11 +6,13 @@ const ToAuthPage = () => {
     const navigate=useNavigate()
     return (
         <div>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90%', marginTop: '88px' }}>
-                Yetkisiz Sayfadasınız Lütfen Giriş Yapmak İçin{' '}
-                <span style={{ color: 'red', textDecoration: 'underline' }} onClick={() => navigate('/')}>
-                    Tıklayınız
-                </span>{' '}
+            <div className='to-auth-page' >
+             <span>  Yetkisiz Sayfadasınız Lütfen Giriş Yapmak İçin</span> 
+             <span onClick={() => navigate('/')}>
+                      Tıklayınız
+                </span>
+                  
+
             </div>
         </div>
     )

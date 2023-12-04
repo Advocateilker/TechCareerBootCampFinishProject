@@ -491,3 +491,21 @@ button {
   }
 
 }
+
+.to-auth-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F0ECE5;
+  height: 75vh;
+  gap: 4px;
+
+  & span:nth-child(2){
+    color:red;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-shadow: 2px 2px 8px #5b6186;
+  }
+
+}
