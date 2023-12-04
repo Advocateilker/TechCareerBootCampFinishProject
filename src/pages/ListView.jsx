@@ -5,6 +5,7 @@ import Filter from '../components/Filter';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import ToAuthPage from '../components/ToAuthPage';
 import Sidebar from '../components/Sidebar';
+import { toast } from 'react-toastify';
 
 
 const ListView = ({ events, user, }) => {
@@ -33,7 +34,13 @@ const ListView = ({ events, user, }) => {
   useEffect(() => {
     axios
       .get('http://localhost:3038/events', options)
-      .then((res) => setFilteredEvents(res.data))
+      .then((res) => {
+        if (res.data.length > 0) {
+          setFilteredEvents(res.data);
+        } else {
+          toast.error("Aradığınız Etkinlik Tipi Bulunamadı");
+        }
+      })
       .catch((err) => console.log(err));
   }, [query]);
 
