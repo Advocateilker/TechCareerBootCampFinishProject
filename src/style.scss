@@ -52,6 +52,12 @@ header {
   }
 }
 
+@media (max-width:768px) {
+  header{
+    flex-direction: column;
+  }
+}
+
 //Home Page
 
 .container {
@@ -379,6 +385,7 @@ button {
 .main-section {
 
   display: flex;
+  justify-content: center;
 
 
   .sidebar {
@@ -390,6 +397,8 @@ button {
     margin-top: 22px;
     padding: 0px 4px;
     color: #F0ECE5;
+
+
 
     span{
       border: 1px solid #FED9ED;
@@ -408,13 +417,24 @@ button {
 
   }
 
+  @media (max-width:768px) {
+    .sidebar{
+      font-size: 10px;
+      padding: 3px 6px;
+      width: 19%;
+      h5{
+        font-size: 12px;
+      }
+    }
+    
+  }
   .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     max-height: 80vh;
     gap: 15px;
     padding: 12px 22px;
-    width: 85%;
+    width: 78%;
 
     .card {
       border: 1px solid #161A30;
@@ -458,6 +478,14 @@ button {
 
         }
 
+    
+
+      }
+      @media (max-width:768px) {
+        .card-container{
+          width: 68%;
+        }
+        
       }
 
       &:hover {
