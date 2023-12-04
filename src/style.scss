@@ -427,6 +427,13 @@ button {
         justify-content: space-between;
         gap: 7px;
 
+        button{
+          background-color: #B6BBC4;
+          &:hover{
+            background-color: #31304D;
+          }
+        }
+
         .place {
           cursor: pointer;
           position: relative;
