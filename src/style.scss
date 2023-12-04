@@ -499,6 +499,14 @@ button {
   color: #F0ECE5;
   height: 75vh;
   gap: 4px;
+  background-image: url("https://i.pinimg.com/originals/0f/c1/08/0fc108b9a016b2be79292b0bdfb17be2.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  margin-top: 22px;
+  span{
+    color: #f52e98;
+  }
 
   & span:nth-child(2){
     color:red;
