@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: rgb(248, 220, 158);
+  background-color: #161A30;
 }
 
 //Header Kısmı
@@ -19,16 +19,17 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px 55px;
-  background-color: rgb(243, 194, 159);
+  background-color:#31304D;
   align-items: center;
 
   .left {
     cursor: pointer;
     font-size: 28px;
     text-shadow: 2px 2px 12px black;
+    color: #F0ECE5;
 
     &:hover {
-      color: white;
+      color:#B6BBC4;
     }
   }
 
@@ -37,16 +38,16 @@ header {
     gap: 12px;
 
     & a {
-      color: white;
+      color: #F0ECE5;
       text-shadow: 2px 2px 12px black;
 
       &:hover {
-        color: chocolate;
+        color:#B6BBC4;
       }
     }
 
     .active {
-      color: black;
+      color: #FED9ED;
     }
   }
 }
@@ -61,143 +62,39 @@ header {
 
 }
 
-.auth {
-  background-color: rgb(88, 180, 85);
-  color: black;
-  width: 60vw;
-  max-width: 600px;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-direction: column;
-  border-radius: 12px;
-
-  h1 {
-    font-size: 3.2rem;
-    line-height: 1.2;
-  }
-
-  p {
-    font-size: 1.2rem;
-    text-shadow: 2px 2px 10px rgb(235, 142, 235);
-  }
-
-
-  button {
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    padding: 5px 10px;
-    gap: 8px;
-    background-color: rgb(3, 46, 3);
-
-    img {
-      width: 25px;
-      height: 25px;
-      border-radius: 100%;
-    }
-
-  }
-
-  @media (max-width:700px) {
-    width: 90vw;
-  }
-
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  color: aliceblue;
-  transition: border-color .2s;
-
-  &:hover {
-    border-color: rgb(235, 142, 235);
-  }
-
-  &:focus {
-    outline: 4px auto rgb(235, 142, 235);
-  }
-}
-
-
-
-
-.mapView {
-  height: 90vh;
-  width: 100%;
-}
-
-
-
-.detail-card {
-  width: 80%;
-  margin: 22px auto;
-  padding: 12px 24px;
-  border: 1px solid transparent;
-  transition: border .3s;
-  box-shadow: 2px 2px 12px black;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-
-
-  &:hover {
-    border: 1px solid chocolate;
-    border-radius: 12px;
-  }
-
-  .detail-card-left {
-    width: 100%;
-    height: 500px;
-
-    .splide {
-      height: 100%;
-    }
-
-    img {
-      height: 430px;
-      width: 100%;
-      object-position: center;
-      object-fit: contain;
-
-    }
-  }
-
-
-}
 
 .home {
   width: 90%;
   margin: 12px auto;
+  color:#F0ECE5 ;
 
   .welcome {
     border: 1px solid transparent;
-    box-shadow: 2px 2px 12px black;
+    box-shadow: 2px 2px 12px #F0ECE5;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 12px;
     gap: 8px;
     position: relative;
+    background-color: #31304D;
+    border-radius: 8px;
 
     .sign-out {
       position: absolute;
       right: 13px;
       top: 8px;
-      background-color: rgb(247, 90, 90);
+      background-color:#5b6186;
       color: white;
       cursor: pointer;
       padding: 2px 4px;
       border-radius: 8px;
       box-shadow: 2px 3px 15px black;
+
+      &:hover{
+        background-color: #FED9ED;
+        color: #161A30;
+      }
     }
 
 
@@ -252,6 +149,138 @@ button {
   }
 }
 
+//Auth Page
+
+.auth {
+  background-color:#31304D;
+  box-shadow: 2px 2px 10px #F0ECE5;
+  color: #F0ECE5;
+  width: 60vw;
+  max-width: 600px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  border-radius: 12px;
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 10px #31304D;
+  }
+
+
+  button {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 10px;
+    gap: 8px;
+    background-color: #161A30;
+
+    img {
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+    }
+
+  }
+
+  @media (max-width:700px) {
+    width: 90vw;
+  }
+
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  color: aliceblue;
+  transition: border-color .2s;
+
+  &:hover {
+    border-color:#F0ECE5;
+  }
+
+  &:focus {
+    outline: 4px auto #F0ECE5;
+  }
+}
+
+
+// Map Page
+
+.mapView {
+  height: 90vh;
+  width: 100%;
+}
+
+
+// Detail Page
+
+
+.detail-card {
+  width: 80%;
+  margin: 22px auto;
+  color: #F0ECE5;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  transition: border .3s;
+  box-shadow: 2px 2px 12px black;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+
+  &:hover {
+    border: 1px solid #FED9ED;
+    border-radius: 12px;
+  }
+
+  .detail-card-left {
+    width: 100%;
+    height: 500px;
+
+    .splide {
+      height: 100%;
+    }
+
+    img {
+      height: 430px;
+      width: 100%;
+      object-position: center;
+      object-fit: contain;
+
+    }
+  }
+
+
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  gap: 22px;
+
+  a {
+    color: #FED9ED;
+  }
+}
+
+// filter Area
+
 .filter {
   display: flex;
   justify-content: space-between;
@@ -299,15 +328,15 @@ button {
     display: flex;
     gap: 3px;
     .date-btn{
-      border: 1px solid khaki;
-      background-color: #1a1a1a;
+      border: 1px solid #5b6186;
+      background-color: #161A30;
       color: white;
       padding: 8px 6px;
       font-size: 14px;
       cursor: pointer;
       transition: all .2s;
       &:hover{
-        background-color: rgb(247, 198, 198);
+        background-color: #FED9ED;
         color: #1a1a1a;
         box-shadow: 1px 1px 5px black;
       }
@@ -328,7 +357,7 @@ button {
     gap: 2px;
 
     button:hover {
-      background-color: chocolate;
+      background-color:#FED9ED;
       color: wheat;
 
     }
@@ -345,16 +374,7 @@ button {
 
 }
 
-.share-buttons {
-  display: flex;
-  justify-content: center;
-  font-size: 32px;
-  gap: 22px;
 
-  a {
-    color: chocolate;
-  }
-}
 
 .main-section {
 
@@ -369,16 +389,18 @@ button {
     white-space: nowrap;
     margin-top: 22px;
     padding: 0px 4px;
+    color: #F0ECE5;
 
     span{
-      border: 1px solid khaki;
+      border: 1px solid #FED9ED;
       background-color: #1a1a1a;
+      border-radius: 6px;
       color: white;
       padding: 3px 6px;
       cursor: pointer;
       transition: all .2s;
       &:hover{
-        background-color: rgb(247, 198, 198);
+        background-color:#FED9ED;
         color: #1a1a1a;
         box-shadow: 1px 1px 5px black;
       }
@@ -388,14 +410,14 @@ button {
 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     max-height: 80vh;
     gap: 15px;
     padding: 12px 22px;
     width: 85%;
 
     .card {
-      border: 1px solid black;
+      border: 1px solid #161A30;
       border-radius: 12px;
       padding: 8px 14px;
 
@@ -412,11 +434,11 @@ button {
 
         .hover {
           position: absolute;
-          background-color: white;
+          background-color:#F0ECE5;
           font-weight: 600;
           font-size: 14px;
           color: black;
-          border: 1px solid rgb(30, 210, 201);
+          border: 1px solid #1a1a1a;
           border-radius: 6px;
           padding: 3px 6px;
           text-align: center;
@@ -432,13 +454,13 @@ button {
       }
 
       &:hover {
-        background-color: chocolate;
-        color: white;
+        background-color:#FED9ED;
+        color: #1a1a1a;
       }
 
       &:hover h3 {
 
-        color: white;
+        color: #161A30;
       }
 
       & h3 {
@@ -447,7 +469,7 @@ button {
         white-space: nowrap;
         font-size: 19px;
         font-weight: 800;
-        color: rgb(163, 80, 20);
+        color: #B6BBC4;
 
       }
 
