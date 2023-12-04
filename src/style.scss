@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px 55px;
-  background-color:#31304D;
+  background-color: #31304D;
   align-items: center;
 
   .left {
@@ -29,7 +29,7 @@ header {
     color: #F0ECE5;
 
     &:hover {
-      color:#B6BBC4;
+      color: #B6BBC4;
     }
   }
 
@@ -42,7 +42,7 @@ header {
       text-shadow: 2px 2px 12px black;
 
       &:hover {
-        color:#B6BBC4;
+        color: #B6BBC4;
       }
     }
 
@@ -53,7 +53,7 @@ header {
 }
 
 @media (max-width:768px) {
-  header{
+  header {
     flex-direction: column;
   }
 }
@@ -72,7 +72,7 @@ header {
 .home {
   width: 90%;
   margin: 12px auto;
-  color:#F0ECE5 ;
+  color: #F0ECE5;
 
   .welcome {
     border: 1px solid transparent;
@@ -90,14 +90,14 @@ header {
       position: absolute;
       right: 13px;
       top: 8px;
-      background-color:#5b6186;
+      background-color: #5b6186;
       color: white;
       cursor: pointer;
       padding: 2px 4px;
       border-radius: 8px;
       box-shadow: 2px 3px 15px black;
 
-      &:hover{
+      &:hover {
         background-color: #FED9ED;
         color: #161A30;
       }
@@ -125,8 +125,25 @@ header {
       }
     }
 
+    @media (max-width:510px) {
+      .sign-out {
+        position: absolute;
+        right: 1px;
+        top: 32px;
+        background-color: #5b6186;
+        color: white;
+        cursor: pointer;
+        padding: 2px 4px;
+        font-size: 12px;
+        border-radius: 8px;
+        box-shadow: 2px 3px 15px black;
 
+      }
+
+    }
   }
+
+
 
   .popular {
     max-height: 80px;
@@ -158,7 +175,7 @@ header {
 //Auth Page
 
 .auth {
-  background-color:#31304D;
+  background-color: #31304D;
   box-shadow: 2px 2px 10px #F0ECE5;
   color: #F0ECE5;
   width: 60vw;
@@ -216,7 +233,7 @@ button {
   transition: border-color .2s;
 
   &:hover {
-    border-color:#F0ECE5;
+    border-color: #F0ECE5;
   }
 
   &:focus {
@@ -306,54 +323,57 @@ button {
   form {
     height: 100%;
   }
-.date-filter{
-  display: flex;
-  align-items: center;
-  gap: 12px;
 
-  .date-input{
+  .date-filter {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    align-items: center;
+    gap: 12px;
 
-    label{
-      font-weight: 600;
-    }
+    .date-input {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
 
-    input{
-
-      padding: 3px 6px;
-      border: none;
-      outline: none;
-      border-radius: 8px;
-    }
-
-  }
-
-  .date-buttons{
-    display: flex;
-    gap: 3px;
-    .date-btn{
-      border: 1px solid #5b6186;
-      background-color: #161A30;
-      color: white;
-      padding: 8px 6px;
-      font-size: 14px;
-      cursor: pointer;
-      transition: all .2s;
-      &:hover{
-        background-color: #FED9ED;
-        color: #1a1a1a;
-        box-shadow: 1px 1px 5px black;
+      label {
+        font-weight: 600;
       }
+
+      input {
+
+        padding: 3px 6px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+      }
+
     }
 
+    .date-buttons {
+      display: flex;
+      gap: 3px;
+
+      .date-btn {
+        border: 1px solid #5b6186;
+        background-color: #161A30;
+        color: white;
+        padding: 8px 6px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+          background-color: #FED9ED;
+          color: #1a1a1a;
+          box-shadow: 1px 1px 5px black;
+        }
+      }
+
+    }
+
+
+
+
   }
-
-
-
-
-}
 
 
 
@@ -363,7 +383,7 @@ button {
     gap: 2px;
 
     button:hover {
-      background-color:#FED9ED;
+      background-color: #FED9ED;
       color: wheat;
 
     }
@@ -392,7 +412,7 @@ button {
     width: 15%;
     display: flex;
     flex-direction: column;
-    gap:12px;
+    gap: 12px;
     white-space: nowrap;
     margin-top: 22px;
     padding: 0px 4px;
@@ -400,7 +420,7 @@ button {
 
 
 
-    span{
+    span {
       border: 1px solid #FED9ED;
       background-color: #1a1a1a;
       border-radius: 6px;
@@ -408,8 +428,9 @@ button {
       padding: 3px 6px;
       cursor: pointer;
       transition: all .2s;
-      &:hover{
-        background-color:#FED9ED;
+
+      &:hover {
+        background-color: #FED9ED;
         color: #1a1a1a;
         box-shadow: 1px 1px 5px black;
       }
@@ -418,16 +439,18 @@ button {
   }
 
   @media (max-width:768px) {
-    .sidebar{
+    .sidebar {
       font-size: 10px;
       padding: 3px 6px;
       width: 19%;
-      h5{
+
+      h5 {
         font-size: 12px;
       }
     }
-    
+
   }
+
   .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -447,9 +470,10 @@ button {
         justify-content: space-between;
         gap: 7px;
 
-        button{
+        button {
           background-color: #B6BBC4;
-          &:hover{
+
+          &:hover {
             background-color: #31304D;
           }
         }
@@ -461,7 +485,7 @@ button {
 
         .hover {
           position: absolute;
-          background-color:#F0ECE5;
+          background-color: #F0ECE5;
           font-weight: 600;
           font-size: 14px;
           color: black;
@@ -478,18 +502,19 @@ button {
 
         }
 
-    
+
 
       }
+
       @media (max-width:768px) {
-        .card-container{
+        .card-container {
           width: 68%;
         }
-        
+
       }
 
       &:hover {
-        background-color:#FED9ED;
+        background-color: #FED9ED;
         color: #1a1a1a;
       }
 
@@ -520,7 +545,7 @@ button {
 
 }
 
-.to-auth-page{
+.to-auth-page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -530,14 +555,15 @@ button {
   background-image: url("https://i.pinimg.com/originals/0f/c1/08/0fc108b9a016b2be79292b0bdfb17be2.gif");
   background-position: center;
   background-repeat: no-repeat;
-  
+
   margin-top: 22px;
-  span{
+
+  span {
     color: #f52e98;
   }
 
-  & span:nth-child(2){
-    color:red;
+  & span:nth-child(2) {
+    color: red;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
