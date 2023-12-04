@@ -34,14 +34,14 @@ const Filter = ({ onFilterChange, query, setStartDate, setEndDate, handleFilter,
           <button className='btn date-btn' onClick={()=>{
             handleFilter();
             toast.success(`${startDate} ve ${endDate} tarihleri arası filtrelendi.`)
-            }}>Filtrele</button>
+            }}>Filtrele </button>
           <button className='btn date-btn' onClick={()=>{
             handleClearDate();
             toast.warning(`tarih filteresi temizlendi`)
-            }}>Temizle</button>
+            }}>Temizle </button>
         </div>
       </div>
-      <form onSubmit={handleSubmit} className="d-flex gap-1">
+      <form onSubmit={handleSubmit} className="d-flex gap-2">
         <input placeholder="Etkinlik & Mekan Ara" className="form-control" type="text" />
         <button className="btn btn-success">{!query ? "Ara" : "Temizle"}</button>
       </form>
