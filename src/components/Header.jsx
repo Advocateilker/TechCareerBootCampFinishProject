@@ -1,9 +1,8 @@
-import {useState} from 'react'
 import { NavLink, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate()
-  const [hidden,setHidden]=useState(false)
+
   return (
     <header>
       <div onClick={() => navigate("/home")} className='left'>BiletEdin</div>
