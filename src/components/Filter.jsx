@@ -23,7 +23,7 @@ const Filter = ({ onFilterChange, query, setStartDate, setEndDate, handleFilter,
           />
         </div>
         <div className='date-input'>
-          <label>End Date</label>
+          <label> End Date</label>
           <input
             type="date"
             value={endDate}
@@ -38,7 +38,7 @@ const Filter = ({ onFilterChange, query, setStartDate, setEndDate, handleFilter,
           <button className='btn date-btn' onClick={()=>{
             handleClearDate();
             toast.warning(`tarih filteresi temizlendi`)
-            }}>Temizle </button>
+            }}> Temizle </button>
         </div>
       </div>
       <form onSubmit={handleSubmit} className="d-flex gap-2">
