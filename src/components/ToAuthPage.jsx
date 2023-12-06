@@ -7,9 +7,9 @@ const ToAuthPage = () => {
     return (
         <div>
             <div className='to-auth-page' >
-             <span>  Yetkisiz Sayfadasınız Lütfen Giriş Yapmak İçin</span> 
+             <span>   Yetkisiz Sayfadasınız Lütfen Giriş Yapmak İçin</span> 
              <span onClick={() => navigate('/')}>
-                      Tıklayınız
+                       Tıklayınız
                 </span>
                   
 

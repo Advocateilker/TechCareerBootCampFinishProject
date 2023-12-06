@@ -1,54 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  list-style: none;
+  margin:  0;
+  padding:  0;
+  box-sizing:  border-box;
+  font-family:  'Poppins', sans-serif;
+  text-decoration:  none;
+  list-style:  none;
 }
 
 body {
-  background-color: #161A30;
+  background-color:  #161A30;
 }
 
 //Header Kısmı
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display:  flex ;
+  justify-content:  space-between;
   padding: 10px 55px;
-  background-color: #31304D;
-  align-items: center;
+  background-color:  #31304D;
+  align-items:  center;
 
   .left {
-    cursor: pointer;
-    font-size: 28px;
-    text-shadow: 2px 2px 12px black;
-    color: #F0ECE5;
+    cursor:  pointer;
+    font-size:  28px;
+    text-shadow:  2px 2px 12px black;
+    color:  #F0ECE5 ;
 
     &:hover {
-      color: #B6BBC4;
+      color:  #B6BBC4 ;
     }
   }
 
 
   .right {
-    display: flex;
-    gap: 12px;
+    display:  flex ;
+    gap:  12px;
 
     & a {
-      color: #F0ECE5;
-      text-shadow: 2px 2px 12px black;
+      color:  #F0ECE5;
+      text-shadow:  2px 2px 12px black;
 
       &:hover {
-        color: #B6BBC4;
+        color:  #B6BBC4;
       }
     }
 
     .active {
-      color: #FED9ED;
+      color:  #FED9ED;
     }
   }
 }
@@ -68,7 +68,7 @@ header {
   header {
 
     .right{
-      font-size: 12px;
+      font-size: 11px;
     }
 
   }
@@ -79,53 +79,53 @@ header {
 
 .container {
 
-  height: 100vh;
-  display: grid;
-  place-items: center;
+  height:  100vh;
+  display:  grid ;
+  place-items:  center;
 
 }
 
 
 .home {
-  width: 90%;
-  margin: 12px auto;
-  color: #F0ECE5;
+  width:  90%;
+  margin:  12px auto;
+  color:  #F0ECE5;
 
   .welcome {
-    border: 1px solid transparent;
-    box-shadow: 2px 2px 12px #F0ECE5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 12px;
-    gap: 8px;
-    position: relative;
-    background-color: #31304D;
-    border-radius: 8px;
+    border: 1px solid transparent ;
+    box-shadow: 2px 2px 12px #F0ECE5 ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    padding: 10px 12px ;
+    gap: 8px ;
+    position: relative ;
+    background-color: #31304D ;
+    border-radius: 8px ;
 
     .sign-out {
-      position: absolute;
-      right: 13px;
-      top: 8px;
-      background-color: #5b6186;
-      color: white;
-      cursor: pointer;
+      position: absolute ;
+      right: 13px ;
+      top: 8px ;
+      background-color: #5b6186 ;
+      color: white ;
+      cursor: pointer ;
       padding: 2px 4px;
       border-radius: 8px;
-      box-shadow: 2px 3px 15px black;
+      box-shadow: 2px 3px 15px black ;
 
       &:hover {
-        background-color: #FED9ED;
-        color: #161A30;
+        background-color: #FED9ED ;
+        color: #161A30 ;
       }
     }
 
 
     p {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
+      display: flex ;
+      align-items: center ;
+      justify-content: center ;
+      position: relative ;
 
       img {
         width: 22px;
@@ -470,7 +470,7 @@ button {
 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, fr));
     max-height: 80vh;
     gap: 15px;
     padding: 12px 22px;
