@@ -10,7 +10,7 @@ const OutdatedTable = ({ outdated }) => {
                     <th scope='col'> İsmi </th>
                     <th scope='col'> Bitiş Tarihi</th>
                     <th scope='col'> Mekan </th>
-                    <th scope='col'>Kategori </th>
+                    <th scope='col'> Kategori </th>
                 </tr>
             </thead>
             <tbody>
