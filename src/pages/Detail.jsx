@@ -6,7 +6,7 @@ import ShareButtons from '../components/ShareButtons';
 const Detail = () => {
   let { id } = useParams();
   const [event, setEvent] = useState()
-  console.log(id)
+ // console.log(id)
   useEffect(() => {
     axios.get(`http://localhost:3038/events/${id}`)
       .then((res) => setEvent(res.data))
@@ -26,8 +26,8 @@ const Detail = () => {
           }}
         >
           {event?.images?.map((i, index) => (
-            <SplideSlide>
-              <img key={index} src={i} alt="Image 1" />
+            <SplideSlide key={index} >
+              <img src={i} alt="Image 1" />
             </SplideSlide>
 
           ))}
@@ -45,7 +45,7 @@ const Detail = () => {
             <p>Price: <span> 65 &#8378;</span></p>
             <h5 className='text-decoration-underline text-primary'>Fiyatlar</h5>
             {event?.price?.map((p, i) => (
-              <p className='fw-bold'>Kategori-{i + 1} : <span className='text-secondary font-italic'> {p} &#8378;</span></p>
+              <p key={i} className='fw-bold'>Kategori-{i + 1} : <span className='text-secondary font-italic'> {p} &#8378;</span></p>
 
             ))}
             <iframe

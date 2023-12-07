@@ -4,7 +4,7 @@ const Sidebar = ({categories,filterCategory}) => {
     <div className='sidebar'>
       <h5 className='text-decoration-underline'>Kategoriler</h5>
       <span onClick={()=>filterCategory("hepsi")} >Hepsi</span>
-      {categories?.map((c)=> <span onClick={()=>filterCategory(c)}>{c}</span> )}
+      {categories?.map((c,i)=> <span key={i} onClick={()=>filterCategory(c)}>{c}</span> )}
 
     </div>
   )

@@ -29,7 +29,7 @@ const Home = ({ user, events }) => {
           }}
         >
           {popularEvents?.map((p) => (
-            <SplideSlide>
+            <SplideSlide key={p.id} >
               <div className='popular-index'>
                 <h2>{p?.name}</h2>
                 <p>Kategori : <span>{p.category}</span></p>

@@ -23,7 +23,7 @@ const MapList = ({user,events}) => {
 
                 {events?.map((e) => (
 
-                    <Marker position={[e.location.lat, e.location.lng]}>
+                    <Marker key={e.id} position={[e.location.lat, e.location.lng]}>
                         <Popup>
                             <h4>{e?.name}</h4>
                             <p>{e?.category}</p>
