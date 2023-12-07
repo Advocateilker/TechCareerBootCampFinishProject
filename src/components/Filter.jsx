@@ -17,7 +17,7 @@ const Filter = ({ onFilterChange, query, setStartDate, setEndDate, handleFilter,
         <div className=' date-input'>
           <label> Start Date </label>
           <input
-            type=" date"
+            type="date"
             value={startDate}
             onChange={(e) => setStartDate(e.target.value)}
           />

@@ -393,6 +393,13 @@ button {
 
   }
 
+  @media (max-width:500px) {
+    .date-filter{
+      flex-direction: column;
+    }
+    
+  }
+
 
 
   .filter-btn {
@@ -423,7 +430,7 @@ button {
 .main-section {
 
   display: flex;
-  justify-content: center;
+  
 
 
   .sidebar {
@@ -469,9 +476,10 @@ button {
 
   }
 
+  
   .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)) !important;
     max-height: 80vh;
     gap: 15px;
     padding: 12px 22px;
@@ -524,12 +532,7 @@ button {
 
       }
 
-      @media (max-width:768px) {
-        .card-container {
-          width: 68%;
-        }
 
-      }
 
       &:hover {
         background-color: #FED9ED;
@@ -563,6 +566,20 @@ button {
 
 }
 
+@media (max-width:768px) {
+  .card-container {
+    width: 68%;
+  }
+
+}
+
+@media (max-width:500px) {
+  .card-container {
+    width: 53%;
+  }
+
+}
+
 .to-auth-page {
   display: flex;
   align-items: center;
@@ -589,3 +606,4 @@ button {
   }
 
 }
+
