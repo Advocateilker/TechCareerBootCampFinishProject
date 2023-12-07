@@ -7,9 +7,9 @@ const Header = () => {
     <header>
       <div onClick={() => navigate("/home")} className='left'>BiletEdin</div>
       <div className='right' >
-        <NavLink to={"/feed"}>Etkinlikleri Liste</NavLink>
-        <NavLink to={"/map"}>Harita Görünümü</NavLink>
-        <NavLink to={"/outdated"}>Zamanı Geçmiş Etkinlikler</NavLink>
+        <NavLink to={"/feed"}> Etkinlikleri Liste </NavLink>
+        <NavLink to={"/map"}> Harita Görünümü </NavLink>
+        <NavLink to={"/outdated"}> Zamanı Geçmiş Etkinlikler </NavLink>
       </div>
 
     </header>
