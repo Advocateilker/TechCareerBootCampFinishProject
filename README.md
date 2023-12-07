@@ -1,6 +1,6 @@
 # Tech Career Finish Project
 
-## Istanbul Events Website
+## Istanbul Etkinlikleri Websitesi
 Bu proje, İstanbul'da gerçekleşen etkinlikleri gösteren bir web uygulamasıdır. Kullanıcılar etkinlikleri liste görünümünde, harita görünümünde keşfedebilir ve zaman aşımına uğramış etkinlikleri görüntüleyebilir. Ayrıca, kullanıcılar Google hesaplarıyla giriş yaparak kişiselleştirilmiş özelliklere erişebilirler.
 
 ## Kullanılan Teknolojiler
