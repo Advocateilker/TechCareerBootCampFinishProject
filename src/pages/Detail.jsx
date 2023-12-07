@@ -45,7 +45,7 @@ const Detail = () => {
             <p>Price: <span> 65 &#8378;</span></p>
             <h5 className='text-decoration-underline text-primary'>Fiyatlar</h5>
             {event?.price?.map((p, i) => (
-              <p key={i} className='fw-bold'>Kategori-{i + 1} : <span className='text-secondary font-italic'> {p} &#8378;</span></p>
+              <p key={i} className='fw-bold'>Kategori-{i + 1} : <span className='text-secondary font-italic'> {p.toFixed(2)} &#8378;</span></p>
 
             ))}
             <iframe

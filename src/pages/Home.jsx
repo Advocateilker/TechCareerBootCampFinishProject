@@ -35,7 +35,7 @@ const Home = ({ user, events }) => {
                 <p>Kategori : <span>{p.category}</span></p>
                 <p>Tarih: <span> {p.startDate} - {p.endDate}</span></p>
                 <p>Yeri: <span>{p.place}</span> </p>
-                <p>Fiyat: <span>{p.price[0]}  &#8378;</span></p>
+                <p>Fiyat: <span>{p.price[0].toFixed(2)}  &#8378;</span></p>
                 <img src={p.images[1]} alt="" />
               </div>
             </SplideSlide>
