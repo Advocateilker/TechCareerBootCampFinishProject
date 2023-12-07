@@ -13,17 +13,17 @@ const Filter = ({ onFilterChange, query, setStartDate, setEndDate, handleFilter,
   };
   return (
     <div className="filter">
-      <div className='date-filter'>
-        <div className='date-input'>
-          <label>Start Date</label>
+      <div className=' date-filter'>
+        <div className=' date-input'>
+          <label> Start Date </label>
           <input
-            type="date"
+            type=" date"
             value={startDate}
             onChange={(e) => setStartDate(e.target.value)}
           />
         </div>
-        <div className='date-input'>
-          <label> End Date</label>
+        <div className=' date-input'>
+          <label> End Date </label>
           <input
             type="date"
             value={endDate}
@@ -34,7 +34,7 @@ const Filter = ({ onFilterChange, query, setStartDate, setEndDate, handleFilter,
           <button className='btn date-btn' onClick={()=>{
             handleFilter();
             toast.success(`${startDate} ve ${endDate} tarihleri arası filtrelendi.`)
-            }}>Filtrele </button>
+            }}> Filtrele </button>
           <button className='btn date-btn' onClick={()=>{
             handleClearDate();
             toast.warning(`tarih filteresi temizlendi`)
